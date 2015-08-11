@@ -15,19 +15,24 @@ defaults:
     values:
       title: Julien Tap
 
-description: Julien Tap Blog
+description: explore --method=metagenomics gut::microbiota > data
 author:
   name: Julien Tap
   email: julien.tap@free.fr
   github: tapj
   twitter: julientap
   #pinterest: asd123
+  scholar: aYTQ-WkAAAAJ
   linkedin: julientap
+  gplus: 116819383000559825436?rel=author
   bio: explore --method=metagenomics gut::microbiota > data
   #email_md5: 726351295ec82e145928582f595aa3aa
 
 rss_path: feed.xml
 categories_path: categories.html
 tags_path: tags.html
+about_path: about.html
+data_path: data.html
+research_path: research_interest.html
 
 BASE_PATH:
