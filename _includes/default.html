@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<title>{{ page.title }}</title>
 	{% if page.description %}
-	<meta name="description" content="{{ page.description }}">
+	<meta name="description" content="{{ site.author.name }} {{ page.description }}">
 	{% endif %}
 	<meta name="author" content="{{ site.author.name }}">
     <!--<meta name="description" content="Julien Tap explore --method=metagenomics gut::microbiota &gt; data" />-->
@@ -59,9 +59,9 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			{% if site.author.github %}
-			<a type="button" class="navbar-toggle nav-link" href="http://github.com/{{ site.author.github }}">
-				<i class="fa fa-github"></i>
+			{% if site.author.scholar %}
+			<a type="button" class="navbar-toggle nav-link" href="http://scholar.google.com/citations?user={{ site.author.scholar }}">
+				<i class="fa fa-book"></i>
 			</a>
 			{% endif %}
 			{% if site.author.twitter %}
@@ -85,6 +85,9 @@
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
 				<li class="active"><a href="{{ site.BASE_PATH }}/">Home</a></li>
+				<li><a href="{{ site.BASE_PATH}}/{{ site.about_path }}">About</a></li>
+				<li><a href="{{ site.BASE_PATH}}/{{ site.research_path }}">Research interest</a></li>
+				<li><a href="{{ site.BASE_PATH}}/{{ site.data_path }}">Data</a></li>
 				<li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}">Categories</a></li>
 				<li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}">Tags</a></li>
 			</ul>
@@ -98,6 +101,9 @@
 		</button>
 		<ul class="dropdown-menu" role="menu">
 			<li><a href="{{ site.BASE_PATH}}/"><i class="fa fa-home"></i>Home</a></li>
+			<li><a href="{{ site.BASE_PATH}}/{{ site.about_path }}"><i class="fa fa-user"></i>About</a></li>
+			<li><a href="{{ site.BASE_PATH}}/{{ site.research_path }}"><i class="fa fa-flask"></i>Research interest</a></li>
+			<li><a href="{{ site.BASE_PATH}}/{{ site.data_path }}"><i class="fa fa-database"></i>Data</a></li>
 			<li><a href="{{ site.BASE_PATH}}/{{ site.categories_path }}"><i class="fa fa-folder"></i>Categories</a></li>
 			<li><a href="{{ site.BASE_PATH}}/{{ site.tags_path }}"><i class="fa fa-tags"></i>Tags</a></li>
 			<li class="divider"></li>
