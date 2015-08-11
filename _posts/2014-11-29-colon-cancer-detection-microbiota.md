@@ -1,7 +1,13 @@
-Title: Using gut microbiota to detect colon cancer
-Date: 2014-11-29 12:03:00
-Tags: colon, cancer, metagenomics, microbiota
-Slug: 2014-11-29-colon-cancer-detection-microbiota.html
+---
+layout: post
+title: Using gut microbiota to detect colon cancer
+permalink: 2014-11-29-colon-cancer-detection-microbiota.html
+date: 2014-11-29 12:03:00
+categories: [Article]
+tags: [colon, cancer, metagenomics, microbiota]
+fullview: true
+---
+
 
 A study[^1] published in [Molecular System Biology](http://bit.ly/crcmicrob) showed how gut microbiota could be used to detect colon cancer in combination with standard fecal occult blood test ([FOBT](http://en.wikipedia.org/wiki/Fecal_occult_blood)). The potential is huge as the detection could be increased notably for early stage cancer (where curation have a better prognostic notably).
 
