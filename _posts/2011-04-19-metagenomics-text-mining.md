@@ -1,3 +1,15 @@
+---
+layout: post
+title: A decades of metagenomics approach based studies : a text mining overview
+permalink: 2011-04-19-metagenomics-text-mining.html
+date: 2011-04-19 14:00
+categories: [Article]
+tags: [microbiota, metagenomics, text mining]
+---
+
+
+
+
 The microbiota is the sum of microbial element of a given ecosystem  which can be ocean, soils or human body site like oral and gut. In the  90's, scientist studied microbiota using classical microbiology  culture-dependent approach. However, the majority of microbes aren't  cultivable yet and trying to understand interaction in a microbial  ecosystem is clearly biased without independent culture approach.
 
 Rondon _et al_ published in 2000 for the first time a soil study  using the metagenomic approach. Basically, it consist to study all the  DNA extracted from an environmental sample. As a result, whereas the  number of microbiota study continued to increase, the number of paper  using metagenomic took off. The metagenomic approach is the  "association" of environmental ecology and genomic.
