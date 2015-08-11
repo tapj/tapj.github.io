@@ -7,6 +7,22 @@
 	<meta name="description" content="{{ page.description }}">
 	{% endif %}
 	<meta name="author" content="{{ site.author.name }}">
+    <!--<meta name="description" content="Julien Tap explore --method=metagenomics gut::microbiota &gt; data" />-->
+        <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1.0;">
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="ROBOTS" content="INDEX,FOLLOW">
+        <meta name="google-site-verification" content="3okpi2Xv90vzsIkpi8Y-_WE3thDuY-5MT3oiS-suKMk" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Julien Tap < explore --method=metagenomics gut::microbiota &gt; data " />
+
+        <meta property="og:title" content="Julien Tap" />
+        <meta property="og:site_name" content="Julien Tap">
+        <meta property="og:url" content="">
+        <meta property="og:description" content="Julien Tap < explore --method=metagenomics gut::microbiota &gt; data " />
+   <!-- <meta property="og:image" content="https://twimg0-a.akamaihd.net/profile_images/1733970682/scriptogram.png" /> -->
+        <meta property="og:type" content="article" />
+
 
 	<!-- Enable responsive viewport -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,7 +76,7 @@
 			{% endif %}
 			<a class="navbar-brand" href="{{ site.BASE_PATH }}/">
 				<!--<img src="http://www.gravatar.com/avatar/{{site.author.email_md5}}?s=35" class="img-circle" />-->
-				<img src="https://lh5.googleusercontent.com/-QWPXYqkguV4/AAAAAAAAAAI/AAAAAAAAAAA/y1DQp0f3qpc/s128-c-k/photo.jpg" class="img-circle"/>
+				<img src="data:image/png;base64,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" class="img-circle"/>
 				{{ site.title }}
 			</a>
 		</div>
