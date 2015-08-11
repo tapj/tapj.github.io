@@ -1,12 +1,14 @@
 ---
 layout: post
-title: A decades of metagenomics approach based studies \\: a text mining overview
+title: A decades of metagenomics approach based studies, a text mining overview
 permalink: 2011-04-19-metagenomics-text-mining.html
+date: 2011-04-19 14:00
 categories: [Article]
 tags: [microbiota, metagenomics, text mining]
+description:  The microbiota is the sum of microbial element of a given ecosystem  which can be ocean, soils or human body site like oral and gut. In the  90's, scientist studied microbiota using classical microbiology  culture-dependent approach. However, the majority of microbes aren't  cultivable yet and trying to understand interaction in a microbial  ecosystem is clearly biased without independent culture approach.
 ---
 
-
+<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWbG6QzrHEupvByvy6uKg3IpKcYvkKKLCvqiAzvuR8TEoKt6vjaA" mce_src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWbG6QzrHEupvByvy6uKg3IpKcYvkKKLCvqiAzvuR8TEoKt6vjaA" title="microbiota" style="border: 10px solid white; float: left;" mce_style="border: 10px solid white; float: left;" height="101" border="0" width="150">
 
 
 The microbiota is the sum of microbial element of a given ecosystem  which can be ocean, soils or human body site like oral and gut. In the  90's, scientist studied microbiota using classical microbiology  culture-dependent approach. However, the majority of microbes aren't  cultivable yet and trying to understand interaction in a microbial  ecosystem is clearly biased without independent culture approach.
