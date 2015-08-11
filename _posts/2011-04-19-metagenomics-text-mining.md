@@ -2,7 +2,6 @@
 layout: post
 title: A decades of metagenomics approach based studies : a text mining overview
 permalink: 2011-04-19-metagenomics-text-mining.html
-date: 2011-04-19 14:00
 categories: [Article]
 tags: [microbiota, metagenomics, text mining]
 ---
