@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A new metagenomic marker genes method to study microbiota
-categories: [general, demo, sample]
+categories: [Article]
 tags: [species, human, gut, microbiota, marker, mOTU]
 description: Numerical ecology analysis of microbiota by metagenomic sequencing, currently depend on the availability of DNA sequences of microbial genomes in the public databases.
 ---
