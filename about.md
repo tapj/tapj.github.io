@@ -7,8 +7,15 @@ permalink: about.html
 
 
 <div itemscope itemtype="http://schema.org/Person">
-I am <a href="http://julientap.com" itemprop="url"> <span itemprop="name">Julien Tap</span></a> and I am currently working as <span itemprop="jobTitle">microbial ecologist</span> and data analyst at <span itemprop="affiliation">Danone research</span> located in <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressRegion">Ile de France</span>. You can also check my <a itemprop="sameAs" href="http://www.linkedin.com/in/julientap" >linkedin profile</a>.</div>
 
+I am <a href="http://julientap.com" itemprop="url"> <span itemprop="name">Julien Tap</span></a> and 
+I am currently working as <span itemprop="jobTitle">microbial ecologist</span> and data analyst at 
+<span itemprop="affiliation">Danone research</span> located in <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+<span itemprop="addressRegion">Ile de France</span>. 
+You can also check my <a itemprop="sameAs" href="http://www.linkedin.com/in/julientap" >linkedin profile</a>.
+
+</div>
+</div>
 
 ### Research experience
 
