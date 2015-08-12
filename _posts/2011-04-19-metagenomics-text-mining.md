@@ -15,7 +15,7 @@ The microbiota is the sum of microbial element of a given ecosystem  which can b
 
 Rondon _et al_ published in 2000 for the first time a soil study  using the metagenomic approach. Basically, it consist to study all the  DNA extracted from an environmental sample. As a result, whereas the  number of microbiota study continued to increase, the number of paper  using metagenomic took off. The metagenomic approach is the  "association" of environmental ecology and genomic.
 
-I always got the feeling from my lecture than this full association  was not done between ecologist and genomic people. To test this  association, I extracted the **10/04/2011** from the **pubmed** database all  articles with this query : give me article where you find in title or in  the abstract the keyword "metagenomic" or "microbiota" since 1991. With  this query, I obtained **5193** articles.{{more}}
+I always got the feeling from my lecture than this full association  was not done between ecologist and genomic people. To test this  association, I extracted the **10/04/2011** from the **pubmed** database all  articles with this query : give me article where you find in title or in  the abstract the keyword "metagenomic" or "microbiota" since 1991. With  this query, I obtained **5193** articles.{{more}} <!--more-->
 
 <img itemprop="image" src="http://julientap.free.fr/text_mining/barplot.microbiota.metagenomics.jpg" mce_src="text_mining/barplot.microbiota.metagenomics.jpg" alt="text mining" title="microbiota and metagenomics approach based studies" height="574" border="0" width="491">
 

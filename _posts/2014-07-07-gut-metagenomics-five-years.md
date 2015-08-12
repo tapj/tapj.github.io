@@ -16,7 +16,7 @@ I defended my [PhD](http://julientap.free.fr/These_Julien_Tap.htm "Julien Tap Th
 I made a very rapid review here of huge step articles published during the last five years (I probably forget some of them).
 
 ### New gut metagenomics resources ###
-The first non redundant human gut microbial gene catalog was released in 2010. It contains 3.3 millions genes obtained from 124 individuals [^1]. This study confirmed the existence of a phylogenetic core of microbial species and a functional genes core which was observed respectively by my lab thesis[^2] and by Turnbaugh and colleagues[^3]. {{more}}
+The first non redundant human gut microbial gene catalog was released in 2010. It contains 3.3 millions genes obtained from 124 individuals [^1]. This study confirmed the existence of a phylogenetic core of microbial species and a functional genes core which was observed respectively by my lab thesis[^2] and by Turnbaugh and colleagues[^3]. {{more}} <!--more-->
 
 After the two important HMP resources articles with reference genomes from the human microbiome[^4] and  the diversity of all body site of the human microbiome[^5], the MetaHIT consortium released in 2014 an updated version of the genes catalog including more than 1,200 samples from three continents reaching 10 milions non redundant genes[^6].
 

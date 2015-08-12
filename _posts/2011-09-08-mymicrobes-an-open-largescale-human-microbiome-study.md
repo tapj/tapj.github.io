@@ -10,7 +10,7 @@ tags: [microbiota, open]
 
 ![](http://my.microbes.eu/images/logo2.png)
 
-The discoverers of [enterotypes](http://dx.doi.org/10.1038/nature09944) launched a large scale project called [my.microbes](http://my.microbes.eu/). Since Sept. 8, the project is open to anyone who wants to contribute. The study aims to analyze, through high throughput technologies and innovative bioinformatics tools, the microbiome of any person in the world. People can help by giving a sample and a donation.
+The discoverers of [enterotypes](http://dx.doi.org/10.1038/nature09944) launched a large scale project called [my.microbes](http://my.microbes.eu/). Since Sept. 8, the project is open to anyone who wants to contribute. The study aims to analyze, through high throughput technologies and innovative bioinformatics tools, the microbiome of any person in the world. People can help by giving a sample and a donation. <!--more-->
 
 Recording metadata with a questionnaire, the project aims to analyze up to 5,000 samples from individuals with diverses backgrounds. For each participant, the my.microbes team will provide a report with an enterotype analysis and a functional composition of their microbiota. Giving the global context, participant will be encouraged to share anonymously their data with others participants which have the same microbiome profile.
 

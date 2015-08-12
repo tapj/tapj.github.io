@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Research Interest
-permalink: research-interest
+permalink: research-interest.html
 categories: 
 tags: 
 description: Since the beginning of my scientific experience, my research interest has mainly been oriented towards the study of the interactions between micro-organisms and the host (humans), impacting or ensuring or providing human health and wellbeing.

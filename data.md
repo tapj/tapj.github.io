@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Data
-permalink: data
+permalink: data.html
 ---
 
 
