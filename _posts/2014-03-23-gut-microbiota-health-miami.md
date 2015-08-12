@@ -5,7 +5,7 @@ permalink: 2014-03-23-gut-microbiota-health-miami.html
 date: 2014-03-23 18:42
 categories: [Conference]
 tags: [GMFH, summit, microbiota]
-fullview: false
+fullview: true
 ---
 
 

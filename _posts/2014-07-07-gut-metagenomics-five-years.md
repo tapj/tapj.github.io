@@ -13,10 +13,10 @@ fullview: false
 
 I defended my [PhD](http://julientap.free.fr/These_Julien_Tap.htm "Julien Tap These") in December 2009 and I knew that gut metagenomics will become more and more exiting with such big consortia such as [MetaHIT](http://www.metahit.eu/ "metahit website") and [HMP](http://www.hmpdacc.org/). Combining with other gut microbiome initiatives within the [international human microbiome consortium](http://www.human-microbiome.org/), they contributed to establish new resources, methods and clinical potential applications using metagenomics datasets.
 
-I made a very rapid review here of huge step articles published during the last five years (I probably forget some of them).
+I made a very rapid review here of huge step articles published during the last five years (I probably forget some of them). {{more}} <!--more-->
 
 ### New gut metagenomics resources ###
-The first non redundant human gut microbial gene catalog was released in 2010. It contains 3.3 millions genes obtained from 124 individuals [^1]. This study confirmed the existence of a phylogenetic core of microbial species and a functional genes core which was observed respectively by my lab thesis[^2] and by Turnbaugh and colleagues[^3]. {{more}} <!--more-->
+The first non redundant human gut microbial gene catalog was released in 2010. It contains 3.3 millions genes obtained from 124 individuals [^1]. This study confirmed the existence of a phylogenetic core of microbial species and a functional genes core which was observed respectively by my lab thesis[^2] and by Turnbaugh and colleagues[^3]. 
 
 After the two important HMP resources articles with reference genomes from the human microbiome[^4] and  the diversity of all body site of the human microbiome[^5], the MetaHIT consortium released in 2014 an updated version of the genes catalog including more than 1,200 samples from three continents reaching 10 milions non redundant genes[^6].
 
