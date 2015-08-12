@@ -8,6 +8,8 @@ markdown: kramdown
 #disqus: dbyll
 #google_analytics: dbyll
 
+excerpt_separator: {{more}}
+
 defaults:
   -
     scope:
@@ -31,8 +33,9 @@ author:
 rss_path: feed.xml
 categories_path: categories.html
 tags_path: tags.html
-about_path: about.html
-data_path: data.html
-research_path: research_interest.html
+about_path: about
+data_path: data
+research_path: research-interest
 
 BASE_PATH:
+

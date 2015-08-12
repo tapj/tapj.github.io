@@ -1,7 +1,9 @@
-Title: Data
-Date: 2014-10-29
-Type: Page
-Tags: Data, INRA, EMBL
+---
+layout: page
+title: Data
+permalink: data
+---
+
 
 
 Here are links to find external datasets linked to some of my co-authorship articles:
