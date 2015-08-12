@@ -1,7 +1,13 @@
-Title: Human gut microbiome and enterotypes
-Date: 2011-04-20 19:00
-Slug: 2011-04-20-enterotypes-microbiota.html
-Tags: enterotypes, microbiota, publication, metahit
+---
+layout: post
+title: Human gut microbiome and enterotypes
+permalink: 2011-04-20-enterotypes-microbiota.html
+date: 2011-04-20 19:00
+categories: [Article]
+tags: [enterotypes, microbiota, publication, metahit]
+---
+
+
 
 <img src="http://locus.jouy.inra.fr/metahit/typo3temp/pics/048920d4b2.jpg" alt="MetaHIT" title="MetaHIT Metagenomics Human Intestinal Tract" style="float: right; border: 10px solid white;" mce_style="float: right; border: 10px solid white;" height="80" border="0" width="150">
 

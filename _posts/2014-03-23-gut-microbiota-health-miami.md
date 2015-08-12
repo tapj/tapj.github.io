@@ -1,7 +1,13 @@
-Title: Gut Microbiota for Health summit 2014
-Date: 2014-03-22 18:42
-Slug: 2014-03-23-gut-microbiota-health-miami.html
-Tags: GMFH, summit, microbiota
+--
+layout: post
+title: Gut Microbiota for Health summit 2014
+permalink: 2014-03-23-gut-microbiota-health-miami.html
+date: 2014-03-23 18:42
+categories: [Conference]
+tags: [GMFH, summit, microbiota]
+fullview: false
+---
+
 
 The Gut Microbiota for Health summit organized by
 [AGA](https://www.gastro.org/) with [ENSM](http://esnm.eu/) took place in Miami, 8-9 March 2014. 

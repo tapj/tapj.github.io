@@ -1,7 +1,11 @@
-Title: my.microbes: an open large-scale human microbiome study
-Date: 2011-09-08 17:53:36
-Tags: microbiota, open
-Slug: my-microbes.html
+---
+layout: post
+title: my.microbes, an open large-scale human microbiome study
+date: 2011-09-08 17:53:36
+permalink: 2011-09-08-my-microbes.html
+categories: [Web]
+tags: [microbiota, open]
+---
 
 
 ![](http://my.microbes.eu/images/logo2.png)

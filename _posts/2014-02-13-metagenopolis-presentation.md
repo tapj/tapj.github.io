@@ -1,7 +1,13 @@
-Date: 2014-02-13 12:35
-Title: What is MetaGenoPolis ?
-Tags: microbiota, metagenomics, metagenopolis
-Slug: 2014-02-13-Metagenopolis-presentation.html
+--
+layout: post
+title: What is MetaGenoPolis ?
+permalink: 2014-02-13-Metagenopolis-presentation.html
+date:  2014-02-13 12:35
+categories: [Web]
+tags: [microbiota, metagenomics, metagenopolis]
+fullview: false
+---
+
 
 I'm working since 1 year at [Metagenopolis](http://www.mgps.eu/) unit at INRA institute. Here is below the presentation video.
 

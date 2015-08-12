@@ -1,7 +1,13 @@
-Title: Human gut metagenomics : five years of exciting exploration
-Date: 2014-07-07 16:03:00
-Tags: MetaHIT, HMP, Metagenomics, microbiota
-Slug: 2014-07-07-gut-metagenomics-five-years.html
+--
+layout: post
+title: Human gut metagenomics, five years of exciting exploration
+permalink: 2014-07-07-gut-metagenomics-five-years.html
+date: 2014-07-07 16:03:00
+categories: [Article]
+tags: [MetaHIT, HMP, metagenomics, microbiota]
+fullview: false
+---
+
 
 <img itemprop="image" src="http://eldermet.ucc.ie/wp-content/uploads/IHMC-logo.jpg" alt="IHMC logo" style="float: left; border: 20px solid white; width: 150px;"/>
 

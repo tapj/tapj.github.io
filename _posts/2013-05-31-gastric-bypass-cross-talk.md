@@ -1,6 +1,13 @@
-Title: Gastric bypass help the crosstalk between microbiota and host adipocytes
-Date: 2013-05-31 11:45
-Slug: 2013-05-31-gastric-bypass-cross-talk.html
+---
+layout: post
+title: Gastric bypass help the crosstalk between microbiota and host adipocytes
+permalink: 2013-05-31-gastric-bypass-cross-talk.html
+date: 2013-05-31 11:45
+categories: [Article]
+tags: [gastric, bypass, human, gut, microbiota, obesity]
+fullview: true
+---
+
 
 <img src="http://www.aviesan.fr/var/aviesan/storage/images/mediatheque/images/actus/conf-ican3/57401-1-fre-FR/conf-ican.jpg" alt="ICAN" style="float: left; border: 10px solid white; width: 100px;"/>
 

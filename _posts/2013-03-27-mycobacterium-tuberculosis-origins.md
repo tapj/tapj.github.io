@@ -1,7 +1,11 @@
-Title: Mycobacterium tuberculosis : Origins
-Date: 2013-03-27 10:43:35
-Tags: Mycobacterium, Origins, Pasteur, Genomic, diversity 
-Slugs: 2013-03-27-tuberculosis-origins.html
+---
+layout: post
+title: Mycobacterium tuberculosis origins
+permalink: 2013-03-27-tuberculosis-origins.html
+categories: [Article]
+tags: [tuberculosis, africa, strains]
+---
+
 
 <img style="float: left; margin: 10px;" mce_style="float: left; margin: 10px;" title="mycobacterium tuberculosis" alt="mycobacterium tuberculosis" src="http://www2.cnrs.fr/sites/communique/image/institutpasteur_mycobacterium_tuberculosis_sd_web.jpg" mce_src="http://www2.cnrs.fr/sites/communique/image/institutpasteur_mycobacterium_tuberculosis_sd_web.jpg" height="102" width="138">
 
