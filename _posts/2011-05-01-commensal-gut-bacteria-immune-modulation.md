@@ -1,9 +1,3 @@
-Title: Commensal gut bacteria and immune modulation 
-Date: 2011-05-01 13:23:31
-Type: post
-Tags: commensal, bacteria, intestinal, cell, microbiota 
-Slug: 2011-05-01-commensal-gut-bacteria-immune-modulation.html 
-
 ---
 layout: post
 title: Commensal gut bacteria and immune modulation 
