@@ -6,7 +6,7 @@ permalink: about.html
 
 
 
-<div itemscope itemtype="http://schema.org/Person">
+<!--<div itemscope itemtype="http://schema.org/Person">
 
 I am <a href="http://julientap.com" itemprop="url"> <span itemprop="name">Julien Tap</span></a> and 
 I am currently working as <span itemprop="jobTitle">microbial ecologist</span> and data analyst at 
@@ -15,7 +15,7 @@ I am currently working as <span itemprop="jobTitle">microbial ecologist</span> a
 You can also check my <a itemprop="sameAs" href="http://www.linkedin.com/in/julientap" >linkedin profile</a>.
 
 </div>
-</div>
+</div>-->
 
 ### Research experience
 
