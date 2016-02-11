@@ -23,6 +23,6 @@ In addition, this study showed that a simple food vegetable questionaire summari
 could be predictive of gut microbiota richness. Gut microbiota richness should definitly be taken into account 
 before any nutritional intervention.
 
-[^1]: Tap J et al. [Gut microbiota richness promotes its stability upon increased dietary fibre intake in healthy adults](http://bit.ly/AliminIntest).2015. Environmental Microbiology 17: 4954–4964
+[^1]: Tap J et al. [Gut microbiota richness promotes its stability upon increased dietary fibre intake in healthy adults](http://bit.ly/AlimIntest).2015. Environmental Microbiology 17: 4954–4964
 
 * See also [INRA Press release: An original study in healthy individuals: impact of a high-fibre diet on the gut microbiota](http://presse.inra.fr/en/Resources/Press-releases/Impact-of-a-high-fibre-diet-on-the-gut-microbiota)
