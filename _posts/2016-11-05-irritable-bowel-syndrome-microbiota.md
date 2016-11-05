@@ -11,12 +11,16 @@ fullview: false
 
 A study[^1] published in [Gastroenterology](http://bit.ly/IBSMicrobiota) in Octobre 2016 
 showed how some gut microbiota species were associated with Irritable Bowel Syndrome. The focus was made on the severity of symptoms.
+
+<a href="http://bit.ly/IBSMicrobiota"><img itemprop="image" src="http://www.gastrojournal.org/pb/assets/raw/Health%20Advance/journals/ygast/logo2014.jpg" alt="IBS Microbiota Gastroenterology"/></a>
+
+
 Authors showed firstly that gut enterotypes distribution changed along the severity gradient. Secondly, using machine learning technique,
 authors picked up 90 microbial species to model a gut microbiota signature for IBS symptoms severity.
 Using co-inertia analysis to study the gut microbiome, authors showed that this signature was associated with anxiety and depression, 
 a decrease of bacterial richness and a lower exhaled methane. The enterotype more prevalent in Healthy subject was Prevotella enriched type.
 
-<a href="http://bit.ly/IBSMicrobiota"><img itemprop="image" src="https://pbs.twimg.com/media/CuZYI7-XgAE9nnp.jpg" alt="IBS Microbiota"/></a>
+<a href="http://bit.ly/IBSMicrobiota"><img itemprop="image" src="http://pbs.twimg.com/media/CuZYI7-XgAE9nnp.jpg" alt="IBS Microbiota"/></a>
 
 In addition, this study showed also that fecal microbiota covariated with mucosal microbiota
 despite a different microbiota composition
