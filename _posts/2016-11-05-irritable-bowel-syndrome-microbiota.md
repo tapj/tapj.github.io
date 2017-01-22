@@ -19,7 +19,7 @@ showed how some gut microbiota species were associated with Irritable Bowel Synd
 Authors showed firstly that gut enterotypes distribution changed along the severity gradient. Secondly, using machine learning technique,
 authors picked up 90 microbial species to model a gut microbiota signature for IBS symptoms severity.
 Using co-inertia analysis to study the gut microbiome, authors showed that this signature was associated with anxiety and depression, 
-a decrease of bacterial richness and a lower exhaled methane. The enterotype more prevalent in Healthy subject was Prevotella enriched type.
+a decrease of bacterial richness and a lower exhaled methane. The enterotype more prevalent in Healthy subject was Prevotella enriched type.{{more}} 
 
 <a href="http://bit.ly/IBSMicrobiota"><img itemprop="image" src="http://pbs.twimg.com/media/CuZYI7-XgAE9nnp.jpg" alt="IBS Microbiota"/></a>
 
