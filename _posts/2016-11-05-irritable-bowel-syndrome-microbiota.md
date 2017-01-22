@@ -8,6 +8,7 @@ tags: [severity, IBS, symptoms, microbiota]
 fullview: false
 ---
 
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script><div class="altmetric-embed" data-badge-type="donut" data-altmetric-id="12495429" style="float: right"/>
 
 A study[^1] published in [Gastroenterology](http://bit.ly/IBSMicrobiota) in Octobre 2016 
 showed how some gut microbiota species were associated with Irritable Bowel Syndrome. The focus was made on the severity of symptoms.
