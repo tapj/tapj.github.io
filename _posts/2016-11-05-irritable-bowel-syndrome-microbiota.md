@@ -12,8 +12,6 @@ A study[^1] published in [Gastroenterology](http://bit.ly/IBSMicrobiota) in Octo
 showed how some gut microbiota species were associated with Irritable Bowel Syndrome. The focus was made on the severity of symptoms.
 
 
-<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script><div class="altmetric-embed" data-badge-type="donut" data-altmetric-id="12495429" style="float: right"/></div>
-
 
 <a href="http://bit.ly/IBSMicrobiota"><img itemprop="image" src="http://www.gastrojournal.org/pb/assets/raw/Health%20Advance/journals/ygast/logo2014.jpg" alt="IBS Microbiota Gastroenterology"/></a>
 
@@ -29,3 +27,8 @@ In addition, this study showed also that fecal microbiota covariated with mucosa
 despite a different microbiota composition
 
 [^1]: Tap J, Derrien M et al. [Identification of an Intestinal Microbiota Signature Associated With Severity of Irritable Bowel Syndrome](http://bit.ly/IBSMicrobiota).2016. Gastroenterology
+
+
+
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script><div class="altmetric-embed" data-badge-type="donut" data-altmetric-id="12495429" style="float: right"/></div>
+
