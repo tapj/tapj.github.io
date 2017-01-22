@@ -53,3 +53,6 @@ Those findings open new perspectives in colon cancer medical care management. Ne
 [^5]: Nelson KE et al. [A catalog of reference genomes from the human microbiome](http://www.ncbi.nlm.nih.gov/pubmed/20489017). Science 2010 May 21
 
 [^6]: Mende et al. [Accurate and universal delineation of prokaryotic species](http://www.nature.com/nmeth/journal/v10/n9/abs/nmeth.2575.html). Nature methods 10 (9), 881-884
+
+
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script><div class="altmetric-embed" data-badge-type="donut" data-altmetric-id="2933344" /></div>
