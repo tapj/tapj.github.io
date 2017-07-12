@@ -18,7 +18,7 @@ As a co-authors, I would like to give some additional insight regarding this pap
 ### Getting samples ###
 
 <img itemprop="image" src="http://hopital-necker.aphp.fr/wp-content/blogs.dir/14/files/2012/06/logo-aphp.jpg" alt="AP-HP" style="float: left; border: 20px solid white; width: 150px;"/>
-Getting samples from patient in real life is complex and it is difficult to follow high gold standard from microbial ecologist recommandations. This part was done in the gastoenterology departement at Henri Mondor hospital (France). The main difficulty was to take stool sample in a right way before the coloscopy which is the gold standard to confirm the presence of cancer. The inclusion took two years between 2004 and 2006 before the [take off of gut metagenomics](http://julientap.com/post/2011-04-19-metagenomics-text-mining.html) and notably the first gut metagenomics papers published by Gill, Pop et al in 2006[^2].
+Getting samples from patient in real life is complex and it is difficult to follow high gold standard from microbial ecologist recommandations. This part was done in the gastoenterology departement at Henri Mondor hospital (France). The main difficulty was to take stool sample in a right way before the coloscopy which is the gold standard to confirm the presence of cancer. The inclusion took two years between 2004 and 2006 before the [take off of gut metagenomics](http://julientap.com/2011-04-19-metagenomics-text-mining.html) and notably the first gut metagenomics papers published by Gill, Pop et al in 2006[^2].
 
 
 ### Improving bioinformatics tools ###
