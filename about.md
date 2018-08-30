@@ -19,7 +19,7 @@ You can also check my <a itemprop="sameAs" href="http://www.linkedin.com/in/juli
 
 ### Research experience
 
-* _Since 2015_  Danone Nutricia Research : [Life Science](http://www.danoneresearch.com) – (C. M'Rini) - Palaiseau - France
+* _Since 2015_  Danone Nutricia Research  - Palaiseau - France
 
 * _2013 - 2014_ INRA : [Metagenopolis](http://www.mgps.eu) – (D. Ehrlich, J. Doré) - Jouy-en-Josas - France
 
