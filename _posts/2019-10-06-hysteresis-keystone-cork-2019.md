@@ -17,9 +17,9 @@ We presented a study entitled "Gut microbiome hysteresis is associated with dura
 
 <img itemprop="image" src="../images/Poster_2019_Tap_Keystone_Cork.png" alt="Poster 2019 Keystone Cork Julien Tap" width="400"/>
 
-*(right click to enlarge image)*
+*(right click to enlarge image)*{{more}} <!--more-->
 
-{{more}} 
+
 
 ### Abstract
 
