@@ -11,7 +11,7 @@ fullview: false
 
 A study[^1] published in [Molecular System Biology](http://bit.ly/crcmicrob) showed how gut microbiota could be used to detect colon cancer in combination with standard fecal occult blood test ([FOBT](http://en.wikipedia.org/wiki/Fecal_occult_blood)). The potential is huge as the detection could be increased notably for early stage cancer (where curation have a better prognostic notably).
 
-<a href="http://bit.ly/crcmicrob"><img itemprop="image" src="http://d3dwu2jylmmhzr.cloudfront.net/sites/default/files/highwire/msb/10/11/766/embed/graphic-1.gif" alt="crc msb snapshot"/></a>
+<a href="http://bit.ly/crcmicrob"><img itemprop="image" src="https://www.embopress.org/cms/asset/aae499bf-bf78-4ff9-bb26-ee1e36d90ba0/msb145645-abs-0001-m.jpg" alt="crc msb snapshot"/></a>
 
 As a co-authors, I would like to give some additional insight regarding this paper like a "making of", we could say. First of all, this study is the consequence of a fruitful collaboration between important institution between France (AP-HP) and Germany (EMBL, DKFZ). The most challenging part was to get samples in a right way directly from hospital, to improve current machine learning method to adapt them to metagenomics data and to devellop protocol to study the tumor environment. {{more}} <!--more-->
 
