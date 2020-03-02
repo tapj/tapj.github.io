@@ -28,7 +28,7 @@ Big consortia such as MetaHIT and HMP made possible to improve bionformatics too
 
 ### Focusing on tumor microbiome ###
 
-<img itemprop="image" src="http://www.dkfz.de/microscopy2008/dkfz.jpg" alt="DKFZ" style="float: left; border: 20px solid white; width: 150px;"/> 
+<img itemprop="image" src="https://www.gesundheitsindustrie-bw.de/application/files/4914/3517/8265/09296_de.jpg" alt="DKFZ" style="float: left; border: 20px solid white; width: 150px;"/> 
 Another technical challenge was to explore the tumor environment itself to bring new indication about mechanism of cancer progression. This was done at DKFZ improving existing protocol and using one of last sequencing technology in order to track microbial biomarkers from stool to the tumor itself.
 
 ### Emphasing new perspectives ###
