@@ -15,7 +15,15 @@ I am currently working as <span itemprop="jobTitle">microbial ecologist</span> a
 You can also check my <a itemprop="sameAs" href="http://www.linkedin.com/in/julientap" >linkedin profile</a>.
 
 </div>
+
 </div>-->
+<div itemscope itemtype="http://schema.org/Person">
+After several internships in microbiology at Institut Pasteur (Patrick Grimont, Philippe Glaser, Sylvain Brisse), <span itemprop="name">Julien Tap</span> went to Joel Doré's Lab to do a PhD headed by Marion Leclerc (Jan 2007 to Dec 2009). His main project was to study dietary fiber impact on human gut microbiota using notably metagenomic and metatranscriptomic approach.
+
+Since his PhD, his research interest focused on interactions between nutrition, gut microbiota and human health. This allowed him to work with different AP-HP clinicians like Pr Karine Clément and Pr Iradj Sobhani. As post-doc successively done at EMBL in Peer Bork’s group and at INRA Metagenopolis unit (Joel Doré, Dusko Ehrlich), he used several approaches like numerical ecology and machine learning technics to untangle big omics data with clinical and dietary data.
+
+Julien is currently <span itemprop="jobTitle">microbiome scientist</span> at <span itemprop="affiliation">Danone Nutricia Research</span> center settled in Paris-Saclay campus where he is working on microbiome science topics around nutrition and human health.
+</div>
 
 ### Research experience
 
