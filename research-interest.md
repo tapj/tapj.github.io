@@ -35,6 +35,6 @@ At EMBL, in the [Bork group](http://bork.embl.de/), I continued to study interac
 
 <img src="http://www.silvereco.fr/wp-content/uploads/2014/07/danone-nutricia-research.png" alt="Danone" style="float: left; border: 10px solid white; width: 150px;"/>
 
-Since 2015, I'm working at Danone Nutricia Research at Palaiseau as Microbiome scientist. My main goal is to decipher association between microbiome and nutrition for individual suffering functional gastrointestinal (GI) and motility disorders ([Le Neve et al. 2015](http://www.ncbi.nlm.nih.gov/pubmed/26492847), [Tap et al. 2016](http://dx.doi.org/10.1053/j.gastro.2016.09.049)).
+Since 2015, I'm working at Danone Nutricia Research at Palaiseau as Microbiome scientist. My main goal is to decipher association between microbiome and nutrition for individual suffering functional gastrointestinal (GI) and motility disorders ([Le Neve et al. 2015](http://www.ncbi.nlm.nih.gov/pubmed/26492847), [Tap et al. 2016](http://dx.doi.org/10.1053/j.gastro.2016.09.049), [Tap et al. 2020](https://doi.org/10.1186/s40168-021-01018-9)).
 
 
