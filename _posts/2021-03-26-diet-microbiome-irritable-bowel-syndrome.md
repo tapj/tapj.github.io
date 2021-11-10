@@ -1,6 +1,6 @@
 ---
 title: "Diet and gut microbiome interactions of relevance for symptoms in irritable bowel syndrome"
-date: "2020-03-26 18:00:00"
+date: "2021-03-26 18:00:00"
 fullview: no
 layout: post
 permalink: 2021-03-26-diet-microbiome-irritable-bowel-syndrome.html
