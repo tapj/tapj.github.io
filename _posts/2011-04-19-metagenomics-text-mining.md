@@ -43,7 +43,10 @@ Genomic people use microbial sequenced genome to bin metagenomic dataset, we can
 ####Methods
 
 Here is the boolean query in pubmed :
-`(metagenomic*[Title/Abstract] OR microbiota[Title/Abstract]) AND "1991"[Publication Date] : "2011"[Publication Date]`
+
+
+	(metagenomic*[Title/Abstract] OR microbiota[Title/Abstract])
+	AND "1991"[Publication Date] : "2011"[Publication Date]
 
 Then, the _xml_ result file was downloaded and parsed by _Microsoft Excel_. The _xml_ file and a filtered tabular file are available [here](http://julientap.free.fr/text_mining/metagenomics.microbiota.1991.2011.tab.txt).
 
