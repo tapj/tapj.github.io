@@ -1,9 +1,9 @@
 ---
-title: "futuristic fermented food for gut microbiota"
+title: "Futuristic fermented food for gut microbiota"
 date: "2022-09-30 14:45:00" 
 fullview: true
 layout: post
-permalink: 2022-09-30-futuristic-fermented-food-ai.html
+permalink: 2022-09-30-futuristic-fermented-food-ai-midjourney.html
 tags: 
 - futuristic
 - fermented
