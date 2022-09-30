@@ -1,11 +1,15 @@
 ---
-layout: post
-title: futuristic fermented food for gut microbiota
-permalink: 2022-09-30-futuristic-fermented-food-ai.html
-date: 2022-09-30 11:34 
-categories: [Article]
-tags: [futuristic, fermented, food, microbiota]
+title: "futuristic fermented food for gut microbiota"
+date: "2022-09-30 11:34:00" 
 fullview: true
+layout: post
+permalink: 2022-09-30-futuristic-fermented-food-ai.html
+tags: 
+- futuristic
+- fermented
+- food
+- microbiota
+categories: Article
 ---
 
 What if we ask an AI to generate a realistic picture about futuristic fermented foods that keep microbiota to stay in an healthy state?
