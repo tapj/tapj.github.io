@@ -1,8 +1,8 @@
 ---
 layout: post
 title: futuristic fermented food for gut microbiota
-permalink: 2020-09-30-futuristic-fermented-food-ai.html
-date: 2020-09-30 11:34 
+permalink: 2022-09-30-futuristic-fermented-food-ai.html
+date: 2022-09-30 11:34 
 categories: [Article]
 tags: [futuristic, fermented, food, microbiota]
 fullview: true
