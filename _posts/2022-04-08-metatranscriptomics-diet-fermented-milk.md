@@ -14,10 +14,10 @@ categories: Article
 ---
 
 
-
 In a recent study[^1], we combined taxonomic, functional, and network analysis from shotgun metatranscriptomics 
 analysis of fecal samples, which were collected during the ingestion of a habitual diet 
-and two series of a 3-day high-residue challenge diet, before and following 28-days of fermented milk product (FMP) consumption.{{more}} 
+and two series of a 3-day high-residue challenge diet, before and following 28-days of fermented milk product (FMP) consumption.
+{{more}} 
 
 FMP consumption was associated with the depletion of gas-producing bacteria and 
 increased hydrogen to methane conversion. It also led to the upregulation of activities
