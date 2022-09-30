@@ -1,5 +1,5 @@
 ---
-title: "Futuristic fermented food for gut microbiota"
+title: "Futuristic fermented food for Gut Microbiota"
 date: "2022-09-30 14:45:00" 
 fullview: true
 layout: post
