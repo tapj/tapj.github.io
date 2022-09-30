@@ -1,6 +1,6 @@
 ---
 title: "futuristic fermented food for gut microbiota"
-date: "2022-09-30 15:35:00" 
+date: "2022-09-30 15:00:00" 
 fullview: true
 layout: post
 permalink: 2022-09-30-futuristic-fermented-food-ai.html
