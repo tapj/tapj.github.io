@@ -1,9 +1,9 @@
 ---
 title: "Human gut metatranscriptome changes induced by a fermented milk product are associated with improved tolerance to a flatulogenic diet"
-date: "2021-04-08 18:00:00"
+date: "2022-04-08 18:00:00"
 fullview: no
 layout: post
-permalink: 2021-04-08-metatranscriptomics-diet-fermented-milk.html
+permalink: 2022-04-08-metatranscriptomics-diet-fermented-milk.html
 tags:
 - diet
 - microbiome
