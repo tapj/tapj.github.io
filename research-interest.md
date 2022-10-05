@@ -35,6 +35,8 @@ At EMBL, in the [Bork group](http://bork.embl.de/), I continued to study interac
 
 <img src="http://www.silvereco.fr/wp-content/uploads/2014/07/danone-nutricia-research.png" alt="Danone" style="float: left; border: 10px solid white; width: 150px;"/>
 
-Since 2015, I'm working at Danone Nutricia Research at Palaiseau as Microbiome scientist. My main goal is to decipher association between microbiome and nutrition for individual suffering functional gastrointestinal (GI) and motility disorders ([Le Neve et al. 2015](http://www.ncbi.nlm.nih.gov/pubmed/26492847), [Tap et al. 2016](http://dx.doi.org/10.1053/j.gastro.2016.09.049), [Tap et al. 2020](https://doi.org/10.1186/s40168-021-01018-9)).
+Between 2015 and 2022, I was working at Danone Nutricia Research at Palaiseau as Microbiome scientist. My main goal was to decipher association between microbiome and nutrition for individual suffering functional gastrointestinal (GI) and motility disorders ([Le Neve et al. 2015](http://www.ncbi.nlm.nih.gov/pubmed/26492847), [Tap et al. 2017](http://dx.doi.org/10.1053/j.gastro.2016.09.049), [Tap et al. 2020](https://doi.org/10.1186/s40168-021-01018-9)).
 
+<img src="https://upload.wikimedia.org/wikipedia/fr/thumb/2/2a/Logo-INRAE_Transparent.svg/320px-Logo-INRAE_Transparent.svg.png" alt="INRAE" style="float: right; border: 10px solid white; width: 150px;"/>
 
+I am currently working at [INRAE Micalis Institute Paris Saclay Campus](https://www.micalis.fr/) as research scientist.
