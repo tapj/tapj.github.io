@@ -39,4 +39,4 @@ Between 2015 and 2022, I was working at Danone Nutricia Research at Palaiseau as
 
 <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/2/2a/Logo-INRAE_Transparent.svg/320px-Logo-INRAE_Transparent.svg.png" alt="INRAE" style="float: right; border: 10px solid white; width: 150px;"/>
 
-I am currently working at [INRAE Micalis Institute Paris Saclay Campus](https://www.micalis.fr/) as research scientist.
+I am currently working at [INRAE Micalis Institute Paris Saclay Campus](https://www.micalis.fr/) as research scientist. One of my objectives is to model the role of food microbiota and their interactions with the gut microbiota. For this, I will contribute to implementing a synthetic ecology approach to reconstruct microbial consortia in a reasoned way by notably integrating the avalanche of multivariate omic data available from public studies and ongoing projects in the lab.
