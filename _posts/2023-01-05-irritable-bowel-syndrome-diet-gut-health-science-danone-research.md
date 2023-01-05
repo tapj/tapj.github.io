@@ -1,7 +1,8 @@
 ---
-title: "10 years of research about IBS, gut microbiota and fermented product at Danone Research: what do we found?"
+title: "10 years of research about IBS, gut microbiota and fermented product at Danone Research - what do we found?"
 date: "2023-01-05 10:00:00" 
 fullview: true
+published: true
 layout: post
 permalink: 2023-01-05-irritable-bowel-syndrome-diet-gut-health-science-danone-research.html
 tags: 
