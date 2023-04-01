@@ -1,5 +1,5 @@
 ---
-title: "fermentation microbiome projects"
+title: "Fermentation microbiome projects"
 date: "2023-04-01 11:45:00" 
 fullview: true
 layout: post
