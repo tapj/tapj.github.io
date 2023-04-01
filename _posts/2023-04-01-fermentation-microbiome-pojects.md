@@ -1,9 +1,9 @@
 ---
 title: "fermentation microbiome projects"
-date: "2023-01-01 11:45:00" 
+date: "2023-04-01 11:45:00" 
 fullview: true
 layout: post
-permalink: 2023-01-01-fermentation-microbiome-projects.html
+permalink: 2023-04-01-fermentation-microbiome-projects.html
 tags: 
 - fermented
 - microbiome
