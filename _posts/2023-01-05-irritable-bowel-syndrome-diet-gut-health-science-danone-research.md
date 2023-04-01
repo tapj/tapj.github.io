@@ -19,7 +19,9 @@ Irritable bowel syndrome (IBS) is a common disorder characterized by abdominal p
 
 ![](https://pbs.twimg.com/media/E60R6XNWYAUR0Ou?format=jpg&name=4096x4096)
 
-In a study by Tap et al. (2017), the authors identified an intestinal microbiota signature associated with the severity of IBS using 16S rRNA gene sequencing. They found that IBS patients had a distinct microbiota composition compared to healthy controls, with lower relative abundances of several butyrate-producing bacteria, including Faecalibacterium, Roseburia, and Eubacterium. In a follow-up study, Bennet et al. (2018) found that IBS patients had an altered intestinal antibacterial gene expression response profile, which was linked to bacterial composition and immune activation. {{more}} <!--more--> 
+In a study by Tap et al. (2017), the authors identified an intestinal microbiota signature associated with the severity of IBS using 16S rRNA gene sequencing. They found that IBS patients had a distinct microbiota composition compared to healthy controls, with lower relative abundances of several butyrate-producing bacteria, including Faecalibacterium, Roseburia, and Eubacterium. In a follow-up study, Bennet et al. (2018) found that IBS patients had an altered intestinal antibacterial gene expression response profile, which was linked to bacterial composition and immune activation. 
+
+{{more}} <!--more--> 
 
 
 
