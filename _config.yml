@@ -21,7 +21,7 @@ defaults:
 description: explore --method=metagenomics gut::microbiota > data
 author:
   name: Julien Tap
-  email: julien.tap@free.fr
+  email: julien.tap@inrae.fr
   github: tapj
   twitter: julientap
   #pinterest: asd123
