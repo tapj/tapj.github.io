@@ -4,6 +4,7 @@ title: Mycobacterium tuberculosis origins
 permalink: 2013-03-27-tuberculosis-origins.html
 categories: [Article]
 tags: [tuberculosis, africa, strains]
+post-image: http://www2.cnrs.fr/sites/communique/image/institutpasteur_mycobacterium_tuberculosis_sd_web.jpg
 ---
 
 

@@ -5,10 +5,10 @@ date: 2011-09-08 17:53:36
 permalink: 2011-09-08-my-microbes.html
 categories: [Web]
 tags: [microbiota, open]
+post-image: http://my.microbes.eu/images/logo2.png
 ---
 
 
-![](http://my.microbes.eu/images/logo2.png)
 
 The discoverers of [enterotypes](http://dx.doi.org/10.1038/nature09944) launched a large scale project called [my.microbes](http://my.microbes.eu/). Since Sept. 8, the project is open to anyone who wants to contribute. The study aims to analyze, through high throughput technologies and innovative bioinformatics tools, the microbiome of any person in the world. People can help by giving a sample and a donation. <!--more-->
 

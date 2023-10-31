@@ -6,10 +6,9 @@ date: 2014-07-07 16:03:00
 categories: [Article]
 tags: [MetaHIT, HMP, metagenomics, microbiota]
 fullview: false
+post-image: https://www.embl.org/news/wp-content/uploads/2011/04/human-gut-types-300x139.jpg
 ---
 
-
-<img itemprop="image" src="http://eldermet.ucc.ie/wp-content/uploads/IHMC-logo.jpg" alt="IHMC logo" style="float: left; border: 20px solid white; width: 150px;"/>
 
 I defended my [PhD](http://julientap.free.fr/These_Julien_Tap.htm "Julien Tap These") in December 2009 and I knew that gut metagenomics will become more and more exiting with such big consortia such as [MetaHIT](http://www.metahit.eu/ "metahit website") and [HMP](http://www.hmpdacc.org/). Combining with other gut microbiome initiatives within the [international human microbiome consortium](http://www.human-microbiome.org/), they contributed to establish new resources, methods and clinical potential applications using metagenomics datasets.
 

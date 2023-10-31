@@ -10,11 +10,10 @@ tags:
 - structural
 - microbiota
 categories: Article
+post-image: https://images.zapnito.com/users/190521/posters/768db377f091872a01eef12903411301/3ef4764e-427c-48ff-83b6-d4cb042a3d3b_large.png
 ---
 
 The intestinal microbiota is considered to be a major reservoir of antibiotic resistance determinants (ARDs) that could potentially be transferred to bacterial pathogens via mobile genetic elements. A collaboration between several research institute including INRA, AP-HP and Institut Pasteur succeed to predict more than 6,000 ARDs from the gut microbiota using protein structural model.
-
-<a href="https://www.nature.com/articles/s41564-018-0292-6"><img itemprop="image" src="https://images.zapnito.com/users/190521/posters/768db377f091872a01eef12903411301/3ef4764e-427c-48ff-83b6-d4cb042a3d3b_large.png" alt="Seing metagenomic data in 3D" width="400"/></a>
 
 A study[^1] published in [Nature Microbiology](https://www.nature.com/articles/s41564-018-0292-6) in November 2018 
 showed that a new developped method based on 3D structural modeling was able to predict 10-fold more ARDS genes than previous studies. To confirm those prediction, several distant hit were tested using gene synthesis confirming their ability to confer antibiotic resistance. In addition, authors were able to cluster individuals into six resistotypes very closely related to previous enterotypes. {{more}} <!--more-->

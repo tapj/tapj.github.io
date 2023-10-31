@@ -10,6 +10,7 @@ tags:
 - food
 - microbiota
 categories: Article
+post-image: ../images/fermented_AI.png
 ---
 
 What if we ask an AI to generate a realistic picture about futuristic fermented foods that keep microbiota to stay in an healthy state?

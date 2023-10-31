@@ -6,12 +6,11 @@ date: 2011-05-01 13:23:31
 categories: [Article]
 tags: [commensal, bacteria, intestinal, cell, microbiota]
 fullview: true
+post-image: http://upload.wikimedia.org/wikipedia/commons/thumb/6/63/NF-%CE%BAB.svg/500px-NF-%CE%BAB.svg.png
 ---
 
 
 
-
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/63/NF-%CE%BAB.svg/500px-NF-%CE%BAB.svg.png" alt="NF-kb pathway" style="float: left; border: 10px solid white; width: 300px;"/>
 After the development of a cell reporter system for NF-kB pathway and identification of new potential therapeutic molecule by metagenomic screening, INRA scientists have focused directly on intestinal bacteria isolated in the laboratory. The ability to modulate the NF-kB pathway, central for immune response, was studied for 49 commensal strains. 
 
 Interestingly, according to the cell lines, enterocytes or colonocytes, the modulatory capacity of commensal bacteria was different and was correlated for some of them with the presence of butyrate or propionate, which are known to be energetic for intestinal cells.

@@ -6,6 +6,7 @@ date: 2014-11-29 12:03:00
 categories: [Article]
 tags: [colon, cancer, metagenomics, microbiota]
 fullview: false
+post-image: https://www.embopress.org/cms/asset/aae499bf-bf78-4ff9-bb26-ee1e36d90ba0/msb145645-abs-0001-m.jpg
 ---
 
 

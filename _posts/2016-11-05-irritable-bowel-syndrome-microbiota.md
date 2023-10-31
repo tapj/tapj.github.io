@@ -6,6 +6,7 @@ date: 2016-11-05 12:03:00
 categories: [Article]
 tags: [severity, IBS, symptoms, microbiota]
 fullview: false
+post-image: http://pbs.twimg.com/media/CuZYI7-XgAE9nnp.jpg
 ---
 
 Irritable bowel syndrome (IBS) is the most prevalent functional gastrointestinal disorder in western societies, characterized by chronic abdominal pain and discomfort. It affects about 11% of the adult population and strongly impairs quality of life, social function, work productivity and brings substantial costs to health-care services. The etiology of IBS remains poorly understood and the search for biomarkers is ongoing. It is now well accepted that IBS is a disorder involving multiple pathophysiological mechanisms where composition of gut microbiota has been proposed as one of the potentially important factors.

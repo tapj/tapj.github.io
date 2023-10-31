@@ -6,6 +6,7 @@ date: 2012-12-14 11:16:26
 categories: [Article]
 tags: [species, human, gut, variation, individual, genomic]
 description: A joint effort between EMBL and WashU scientist have permitted to make genomic analysis on metagenomic data using some ecological metadata (geography, time sampling) ...
+post-image: http://massgenomics.org/wp-content/uploads/2012/12/HMP-species-coverage.jpg
 ---
 
 

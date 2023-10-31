@@ -5,11 +5,11 @@ permalink: 2011-04-20-enterotypes-microbiota.html
 date: 2011-04-20 19:00
 categories: [Article]
 tags: [enterotypes, microbiota, publication, metahit]
+post-image: https://enterotype.embl.de/images/fig2.png
 ---
 
 
 
-<img src="http://locus.jouy.inra.fr/metahit/typo3temp/pics/048920d4b2.jpg" alt="MetaHIT" title="MetaHIT Metagenomics Human Intestinal Tract" style="float: right; border: 10px solid white;" mce_style="float: right; border: 10px solid white;" height="80" border="0" width="150">
 
 A joint effort between scientists from EMBL (Heidelberg, Germany) and the others partners from the European [MetaHIT](http://www.metahit.eu/) project have permit to describe that Humans can be split in different group based on their gut microbiota composition. Those groups, named enterotypes, are found across nations and continent. Their discovery, published in Nature Journal[^1], indicates the existence of a limited number of well-balanced host-microbial symbiotic states that might respond differently to diet and drug intake. Combining three different human gut microbiota datasets generated with different methodologies, the enterotypes are mostly driven by microbial composition and in particularly by _Bacteroides_, _Prevotella_ and Clostridiales species. <!--more-->
 

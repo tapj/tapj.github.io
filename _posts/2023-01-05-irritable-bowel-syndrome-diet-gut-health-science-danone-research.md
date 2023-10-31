@@ -4,6 +4,7 @@ date: "2023-01-05 10:00:00"
 fullview: no
 published: true
 layout: post
+post-image: https://pbs.twimg.com/media/E60R6XNWYAUR0Ou?format=jpg&name=4096x4096
 permalink: 2023-01-05-irritable-bowel-syndrome-diet-gut-health-science-danone-research.html
 tags: 
 - IBS
@@ -14,8 +15,6 @@ categories: Article
 ---
 
 Irritable bowel syndrome (IBS) is a common disorder characterized by abdominal pain, bloating, and changes in bowel habits. The role of the gut microbiota in IBS has been increasingly recognized, and several studies have identified alterations in the gut microbial composition and function in IBS patients.
-
-![](https://pbs.twimg.com/media/E60R6XNWYAUR0Ou?format=jpg&name=4096x4096)
 
 In a study by Tap et al. (2017), the authors identified an intestinal microbiota signature associated with the severity of IBS using 16S rRNA gene sequencing. They found that IBS patients had a distinct microbiota composition compared to healthy controls, with lower relative abundances of several butyrate-producing bacteria, including Faecalibacterium, Roseburia, and Eubacterium. In a follow-up study, Bennet et al. (2018) found that IBS patients had an altered intestinal antibacterial gene expression response profile, which was linked to bacterial composition and immune activation. {{more}} <!--more-->
 

@@ -11,6 +11,7 @@ tags:
 - cork
 - poster
 categories: Article
+post-image: https://www.dtk.media/hubfs/_Logos%20for%20Web/GT_KS_Logo_Horiz_Reverse.png
 ---
 
 We presented a study entitled "Gut microbiome hysteresis is associated with durable mucosal alterations" during the Keystone Symposia poster session helded at Killarney : "[Microbiome: Therapeutic Implications](http://www.keystonesymposia.org/20T1)"

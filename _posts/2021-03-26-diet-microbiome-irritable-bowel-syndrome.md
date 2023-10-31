@@ -11,13 +11,14 @@ tags:
 - IBS
 - symptoms
 categories: Article
+post-image: https://pbs.twimg.com/media/ExvcAwkWUAEq0J-?format=jpg&name=medium
 ---
 
 We published a study entitled "Diet and gut microbiome interactions of relevance for symptoms in irritable bowel syndrome" in [Microbiome journal](https://microbiomejournal.biomedcentral.com/articles/10.1186/s40168-021-01018-9).
 
-<img itemprop="image" src="https://pbs.twimg.com/media/ExvcAwkWUAEq0J-?format=jpg&name=medium" alt="food tree sweden" width="400"/>
 
-*(right click to enlarge image)*{{more}} <!--more-->
+
+{{more}} <!--more-->
 
 
 First, we used a food tree approach[^1] to explore dietary data from our cohort. We added a specific nutrient layer to this food tree and computed FSA-NPS diet index (used now to compute NutriScore in front pack food in Europe).

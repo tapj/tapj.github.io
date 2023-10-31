@@ -5,10 +5,8 @@ permalink: 2011-04-19-metagenomics-text-mining.html
 date: 2011-04-19 14:00
 categories: [Article]
 tags: [microbiota, metagenomics, text mining]
-
+post-image: https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWbG6QzrHEupvByvy6uKg3IpKcYvkKKLCvqiAzvuR8TEoKt6vjaA
 ---
-
-<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWbG6QzrHEupvByvy6uKg3IpKcYvkKKLCvqiAzvuR8TEoKt6vjaA" mce_src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRWbG6QzrHEupvByvy6uKg3IpKcYvkKKLCvqiAzvuR8TEoKt6vjaA" title="microbiota" style="border: 10px solid white; float: left;" mce_style="border: 10px solid white; float: left;" height="101" border="0" width="150">
 
 
 The microbiota is the sum of microbial element of a given ecosystem  which can be ocean, soils or human body site like oral and gut. In the  90's, scientist studied microbiota using classical microbiology  culture-dependent approach. However, the majority of microbes aren't  cultivable yet and trying to understand interaction in a microbial  ecosystem is clearly biased without independent culture approach.
@@ -52,17 +50,17 @@ Then, the _xml_ result file was downloaded and parsed by _Microsoft Excel_. The 
 
 here is the R code:
 
-
+```
 	#load ade4 library
 	require(ade4)
 
-	 #read table
+	#read table
 	read.table("metagenomics.microbiota.1991.2011.tab.txt", sep="\t", header=T) -> meta
 	as.character(meta$PMID)-> meta$PMID
 	as.factor(meta$Year) -> meta$Year
 	as.factor(meta$Month) -> meta$Month
 
-	 #Histogram
+	#Histogram
 	par(mfrow=c(2,1), mar=c(5,5,1,1))
 	barplot(table(meta$Year), las=2, col=c(rev(heat.colors(20)), "grey"), ylab="nb of microbiota or/and \n metagenomics articles", xlab="years")
 	hist(meta$Month2, breaks=42, main="", xlab="Months since 1991 Jan", ylab="nb of microbiota or/and \n metagenomics articles", col="yellow")
@@ -70,7 +68,7 @@ here is the R code:
 	hist(meta$Month2[which(meta$microbiota=="no" & meta$metagenomic=="yes" | meta$metagenomics=="yes")],col="blue",breaks=21, add=T)
 	legend("left", c("only microbiota","metagenomics and microbiota", "only metagenomics"), pch=15, col=c("yellow","green","blue"), bty="n")
 
-	 #between class analysis and ACM
+	#between class analysis and ACM
 	dudi.acm(meta[,c(7:1029)], scan=F, nf=3) -> meta.acm
 	between(meta.acm, fac=factor(meta$Year), scann=F) -> meta.year.bet
 
@@ -83,3 +81,4 @@ here is the R code:
 	s.label(meta.year.bet$li, add.plot=T)
 	which(meta.year.bet$co[,1] > 0.4 | meta.year.bet$co[,1]  0.2 | meta.year.bet$co[,2]) ->  select
 	text(meta.year.bet$co[select, 1:2]/2.5, label=row.names(meta.year.bet$co[select,]), cex=0.8, col="blue")
+```

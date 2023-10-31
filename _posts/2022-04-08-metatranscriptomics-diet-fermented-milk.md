@@ -11,6 +11,7 @@ tags:
 - fermented
 - symptoms
 categories: Article
+post-image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037022001180-ga1_lrg.jpg
 ---
 
 
