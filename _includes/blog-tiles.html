@@ -1,0 +1,57 @@
+<style>
+<!--.card {
+    display: flex;
+    flex-direction: column; /* Make the card a flex container with vertical direction */
+}-->
+
+.card-content {
+    flex: 1; /* Make the content grow to take all available space after the image */
+}
+
+.card-image img {
+    width: 100%; /* Make the image fill the container's width */
+    object-fit: cover; /* Keep the image's aspect ratio while making it fill the container */
+}
+
+#blog-tile {
+    transition: all .25s ease;
+    margin-bottom: .5vmax;
+    transform: scale(0.85);
+    margin-right: 2.5vmax;
+    margin-left: 2.5vmax;
+    line-height: normal;
+    border-radius: .25rem;
+    transition: transform 0.5s ease; /* Increase the transition duration for a slower effect */
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,.1);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,.1);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,.1);
+}
+
+#blog-tile:hover {
+    transform: scale(0.88); /* Slight increase when hovered */
+}
+
+
+</style>
+
+<div class="columns is-centered is-multiline is-mobile">
+   {% for post in site.posts offset: 0 limit:3 %}
+    <!--<div class="has-background-grey column has-text-centered is-paddingless is-marginless is-one-third-widescreen is-one-third-desktop is-one-fifth-fullhd is-one-third-tablet is-two-fifths-mobile is-three-quarters-touch"
+	      id="blog-tile">-->
+	 <div class="has-background-grey column has-text-centered is-paddingless is-marginless is-one-fifth-widescreen is-one-third-desktop is-one-fifth-fullhd is-one-third-tablet is-two-fifths-mobile is-three-quarters-touch"
+	      id="blog-tile">	  
+      <a href="{{post.url | absolute_url}}">
+      <div class="has-background-white card">
+        <figure class="card-image image is-4by3">
+          <img src="{{post.post-image}}" alt="{{post.title}} image">
+        </figure>
+        <div class="card-content">
+          <h1 class="title has-text-grey is-size-4">{{post.title}}</h1>
+          <p class="has-text-grey has-text-weight-light content is-size-12">{{ post.content | truncate: 300 | strip_html | strip_newlines | strip | escape  }}</p>
+          <span class="has-text-grey">Published on <span class="has-text-weight-semibold">{{ post.date | date: "%-B %d, %Y" }}</span></span>
+        </div>
+      </div>
+      </a>
+    </div>
+  {% endfor %}
+</div>

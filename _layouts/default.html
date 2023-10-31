@@ -1,23 +1,63 @@
 ---
-theme :
-  name : dbyll
+layout: compress
 ---
-{% include default.html %}
 
-{% if site.google_analytics %}
-<!-- Asynchronous Google Analytics snippet -->
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body>
+  {% include navbar.html %}
+  {% include showcase.html %}
+  {% include shortbio.html %}
+ <!--Main Section-->
+    <section class="hero is-medium" id="project">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="section">
+                    <p class="subtitle is-uppercase has-text-weight-medium has-text-grey">Selected publications</p>
+                </div>
+					{% include project-card.html %}
+            </div>
+        </div>
+    </section>
+	<!--<section class="hero is-medium has-background-white-ter" id="blog">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="section">
+                    <p class="subtitle is-uppercase has-text-weight-medium has-text-grey">Last news</p>
+                </div>
+					{\\% include blog-tiles.html %}
+              </div>
+        </div>
+    </section>-->
+  
+  {% include contact.html %}
+  <!--Footer begins here-->
+  {% include footer.html %}
+</body>
 <script>
-  var _gaq = _gaq || [];
-  var pluginUrl =
- '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
-  _gaq.push(['_setAccount', '{{ site.google_analytics }}']);
-  _gaq.push(['_trackPageview']);
+  var navItems = document.getElementsByClassName('navbar-item');
+  var heroes = document.getElementsByClassName('hero');
+  const viewOffset = 200; 
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+  window.addEventListener("scroll", function (event) {
+    var scroll = this.scrollY;
+    var position = window.pageYOffset;
+
+    for (var i = 0; i < navItems.length; i++) {
+      navItems[i].classList.remove('is-active');
+    }
+
+    for (var i = 0; i < heroes.length; i++) {
+        var sectionTop = heroes[i].offsetTop-viewOffset;
+        var sectionBottom = heroes[i].offsetTop + heroes[i].offsetHeight-viewOffset;
+
+        if (scroll >= sectionTop && scroll < sectionBottom) {
+          navItems[i+1].classList.add('is-active');
+      }
+    }
+  });
 </script>
-{% endif %}
+
+</html>

@@ -1,0 +1,20 @@
+- name: Human gut microbiome branches and local states
+  image: https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-023-38558-7/MediaObjects/41467_2023_38558_Fig2_HTML.png?as=webp
+  link: https://www.nature.com/articles/s41467-023-38558-7
+  description: Our ecological framework for cross-sectional and longitudinal data allows a better understanding of overall variation in the human gut microbiome and disentangles factors associated with specific configurations.
+- name: From Disturbance to Resilience
+  link: https://linkinghub.elsevier.com/retrieve/pii/B9780128192658000395
+  image: https://ars.els-cdn.com/content/image/3-s2.0-B9780128192658000395-f00039-03-9780128192658.sml
+  description: Gut microbiota may encounter various acute and continuous, and the response varies greatly between individuals and stressors. Growing interest in this topic has rapidly led to application of novel high resolution approaches that have increased insight into human gut microbiota stability, dynamics and response to disturbances.
+- name: Diet and gut microbiome in irritable bowel syndrome
+  link: https://link.springer.com/article/10.1186/s40168-021-01018-9
+  image: https://media.springernature.com/lw685/springer-static/image/art%3A10.1186%2Fs40168-021-01018-9/MediaObjects/40168_2021_1018_Fig3_HTML.png?as=webp
+  description: Our study provides an unprecedented resolution of diet-microbiota-symptom interactions and ultimately guides new interventional studies that aim to identify gut microbiome-based nutritional recommendations for the management of gastrointestinal symptoms.
+- name: Irritable bowel syndrome gut microbiome signature
+  link: https://www.sciencedirect.com/science/article/pii/S0016508516351745
+  image: https://ars.els-cdn.com/content/image/1-s2.0-S0016508516351745-gr4.jpg
+  description: In analyzing fecal and mucosal microbiota from patients with IBS and healthy individuals, we identified an intestinal microbiota profile that is associated with the severity of IBS symptoms. 
+- name: Gut microbiota richness and dietary fiber
+  link: https://sfamjournals.onlinelibrary.wiley.com/doi/abs/10.1111/1462-2920.13006
+  image: https://ami-journals.onlinelibrary.wiley.com/cms/asset/07277014-4d48-44fc-b0ac-7771cecb1dee/emi13006-fig-0002-m.png
+  description: Higher microbiota richness was associated with higher microbiota stability upon increased dietary fibre intake.

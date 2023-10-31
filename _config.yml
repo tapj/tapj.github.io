@@ -1,42 +1,99 @@
-# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
-
-paginate: 10 # pagination based on number of posts
-paginate_path: "page:num"
-exclude: ["README.md"] # files to exclude
-#highlighter: pygments
-highlighter: rouge
+# WhatATheme
 markdown: kramdown
-#disqus: dbyll
-#google_analytics: dbyll
 
-excerpt_separator: <!--more-->
+# URL of the Site
+url: ''
+# Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
+baseurl: 
 
+# Title of the Site
+title: Julien Tap
+# Description of the Site
+description: explore --method=metagenomics gut::microbiota &gt; data 
+# URL of Image of the Site
+site-image: /WhatATheme/assets/images/meta.jpg
+# Keywords of the Site
+site-keywords: food gut microbiome
+# URL for the Image of custom Favicon
+favicon-url: 
+
+# URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
+heroimage: http://julientap.free.fr/scotland/skye_island/skye_island/images/IMG02779.jpg
+
+# Social Media and Contact
+# If you don't want to use any icon, you can leave them blank.
+email: julientap@free.fr
+facebook_username: 
+twitter_username: julientap
+instagram_username: 
+linkedin_username: julientap
+github_username:  tapj
+youtube_channel_id: 
+reddit_username: 
+behance_username: 
+dribbble_username: 
+spotify_username: 
+mastodon_username: julientap@mstdn.science
+
+
+# Google Analytics
+google-analytics: G-WPNH22RJKH
+
+# Disqus
+disqus-shortname: 
+
+# Name of the Author
+author-name: Julien Tap
+# URL for the Image of the Author
+author-image: https://media-exp1.licdn.com/dms/image/C4D03AQH5dquo8PbZHw/profile-displayphoto-shrink_800_800/0/1626540214530?e=2147483647&v=beta&t=vnMjdASrWb7r8EMvqAk4yAh51lH4wXM6FNQnvUIliV4
+# 60 Words About the Author
+author-about: Julien is currently a research scientist at INRAE Micalis institute settled in Paris-Saclay campus, where he works on projects related to the interactions between food and human microbiomes in a nutrition and health perspective.
+# URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
+author-url: https://github.com/tapj
+
+# SASS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Build settings
+plugins:
+  - jekyll-admin
+  - jekyll-feed
+
+# Permalink
+permalink: "blog/:title"
+
+# Compress
+compress_html:
+  clippings: all
+
+# Defaults
 defaults:
   -
     scope:
-      path: "" # empty string for all files
+      type: 'posts'
     values:
-      title: Julien Tap
+      layout: post
+      post-image: ""
+      description: ""
+      tags:
+        - ""
+  -
+    scope:
+      type: 'pages'
+    values:
+      layout: page
 
-description: explore --method=metagenomics gut::microbiota > data
-author:
-  name: Julien Tap
-  email: julien.tap@inrae.fr
-  github: tapj
-  twitter: julientap
-  #pinterest: asd123
-  scholar: aYTQ-WkAAAAJ
-  linkedin: julientap
-  gplus: 116819383000559825436?rel=author
-  bio: explore --method=metagenomics gut::microbiota > data
-  #email_md5: 726351295ec82e145928582f595aa3aa
-
-rss_path: feed.xml
-categories_path: categories.html
-tags_path: tags.html
-about_path: about.html
-data_path: data.html
-research_path: research-interest.html
-
-BASE_PATH:
-
+# Exclude
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
