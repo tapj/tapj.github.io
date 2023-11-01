@@ -12,9 +12,9 @@ post-image: https://mgps.eu/wp-content/uploads/2021/04/Image_MGP_INRAE_5.png
 
 I'm working since 1 year at [Metagenopolis](http://www.mgps.eu/) unit at INRA institute. Here is below the presentation video.
 
+> *MetaGenoPolis (MGP) has as strategic goal to demonstrate the impact of the human gut microbiota on health and disease, by making available quantitative and functional Metagenomics technology to the medical, academic and industrial communities.*
+
 <iframe width="560" height="340" src="https://web.archive.org/web/20150804082101/http://inra-dam-videos-pad.brainsonic.com/1/20131001-155901/media_mp4_MD.mp4" frameborder="0" allowfullscreen></iframe>
 
 
-> *MetaGenoPolis (MGP) has as strategic goal to demonstrate the impact of the human gut microbiota on health and disease, by making available quantitative and functional Metagenomics technology to the medical, academic and industrial communities.*
-
-More about MGP (tools and numbers), download [pdf slides](http://www.mgps.eu/fileadmin/Content/Photos/documentation/Metagenopolis_-_Jan2014_vGB.pdf)
+More about MGP (tools and numbers), download [pdf slides](https://mgps.eu/wp-content/uploads/2020/11/texte_Metagenomique-fonctionnelle_24112020.pdf)
