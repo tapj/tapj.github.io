@@ -21,7 +21,7 @@ The results revealed different communities within the gut microbiome, called "ec
 ![](../images/microbiome_enterobranches_train_stations.jpg)
 
 
-The researchers replicated this finding on several datasets, such as curatedMetagenomicData (CMD) and the American Gut Project (AGP), comprising diverse populations and age groups. Significant variations were observed in the different states of the microbiome in individuals belonging to the Bacteroides-enriched branch, indicating that the Faecalibacterium/Bacteroides ratio could serve as an indicator of microbiome instability.
+The researchers replicated this finding on several datasets, such as curatedMetagenomicData (CMD) and the American Gut Project (AGP), comprising diverse populations and age groups. Significant variations were observed in the different states of the microbiome in individuals belonging to the *Bacteroides*-enriched branch, indicating that the *Faecalibacterium*/*Bacteroides* ratio could serve as an indicator of microbiome instability.
 
 
 The analysis also revealed the considerable impact of host factors such as age, body mass index, stool frequency, antibiotic use and region of birth on the gut microbiome. Dietary factors, including plant diversity, snack frequency, vegetable consumption and sweet foods, are associated with ecological states of the gut microbiome.
