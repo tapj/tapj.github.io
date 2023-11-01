@@ -11,6 +11,6 @@ In 2006, I worked at Pasteur Institute (Sylvain Brisse groups) on characterizati
 
 Following this work, in 2013, the Pasteur institute finally published[^1] a set of genome of those smooth strains concluding that _M. tuberculosis_ emerged from an ancestral pool of mycobacteria by gain of persistence and virulence mechanisms.
 
-[^1]: <a href="http://www.nature.com/ng/journal/vaop/ncurrent/full/ng.2517.html" mce_href="http://www.nature.com/ng/journal/vaop/ncurrent/full/ng.2517.html" title="Genomic analysis of smooth tubercle bacilli provides insights into ancestry and pathoadaptation of Mycobacterium tuberculosis">Genomic analysis of smooth tubercle bacilli provides insights into ancestry and pathoadaptation of _Mycobacterium tuberculosis_.</a> Supply et al. Nature Genetics
+[^1]: <a href="https://doi.org/10.1038/ng.2517" title="Genomic analysis of smooth tubercle bacilli provides insights into ancestry and pathoadaptation of Mycobacterium tuberculosis">Genomic analysis of smooth tubercle bacilli provides insights into ancestry and pathoadaptation of _Mycobacterium tuberculosis_.</a> Supply et al. Nature Genetics
 
 [^2]: [FR] <a mce_href="travail_fichiers/htm/mycobacterium-tuberculosis.htm" href="http://julientap.free.fr/travail_fichiers/htm/mycobacterium-tuberculosis.htm">Structure génétique de _Mycobacterium prototuberculosis_ et origine de _M. tuberculosis_.</a> 
