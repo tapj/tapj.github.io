@@ -1,0 +1,191 @@
+---
+title: "google scholar"
+output: html_notebook
+---
+
+```{r eval=FALSE, include=FALSE}
+if(!requireNamespace('remotes')) install.packages("remotes")
+remotes::install_github('jkeirstead/scholar')
+
+
+```
+
+
+```{r}
+library(scholar)
+library(ggplot2)
+library(dplyr)
+
+
+```
+
+
+
+
+```{r extract_citations_function}
+
+pubid = "u5HHmVD_uO8C"
+
+# pubid_extract_citations = function (pubid="u5HHmVD_uO8C"){
+# 
+# html_data = rvest::read_html(paste0("https://scholar.google.com/citations?view_op=view_citation&hl=fr&user=aYTQ-WkAAAAJ&citation_for_view=aYTQ-WkAAAAJ:",pubid))
+# 
+# # Extract years and citations
+# years <- html_data  %>% 
+#   rvest::html_nodes('.gsc_oci_g_t') %>% 
+#   rvest::html_text()
+# 
+# if(length(years) == 0){df=NULL; return(df)}
+# 
+# citations <- html_data  %>% 
+#   rvest::html_nodes('.gsc_oci_g_al') %>% 
+#   rvest::html_text()
+# 
+# # Create a dataframe
+# df <- data.frame(Year = years, Citations = citations, pubid= pubid)
+# return(df)}
+
+
+
+pubid_extract_citations = function (pubid="u5HHmVD_uO8C"){
+
+html_data = rvest::read_html(paste0("https://scholar.google.com/citations?view_op=view_citation&hl=fr&user=aYTQ-WkAAAAJ&citation_for_view=aYTQ-WkAAAAJ:",pubid))
+
+
+
+# Extract years
+years <- html_data %>% 
+  rvest::html_nodes('.gsc_oci_g_t') %>% 
+  rvest::html_text()
+
+if(length(years) == 0){df=NULL; return(df)}
+
+# Initialize an empty citations vector
+citations <- numeric(length(years))
+
+# For each year, check if citation exists
+for (i in seq_along(years)) {
+  # Construct the URL parameter for the specific year
+  as_yhi_param <- paste0("as_yhi=", years[i])
+  
+  # Find nodes with this URL parameter
+  citation_nodes <- html_data %>% 
+    rvest::html_nodes(xpath = paste0('//a[contains(@href, "', as_yhi_param, '")]/span[@class="gsc_oci_g_al"]'))
+  
+  # If the node exists, extract its value
+  if (length(citation_nodes) > 0) {
+    citations[i] <- as.numeric(rvest::html_text(citation_nodes[[1]]))
+  }
+  # Otherwise, it remains zero
+}
+
+# Create a dataframe
+df <- data.frame(Year = years, Citations = citations, pubid= pubid)
+
+return(df)}
+
+
+
+
+#pubid_extract_citations(pubid="QVtou7C4vgoC")
+
+#pubid_extract_citations(pubid="u5HHmVD_uO8C")
+
+```
+
+
+```{r get_scholar_profile}
+# Define the id 
+id <- 'aYTQ-WkAAAAJ'
+
+# Get his profile and print his name
+l <- get_profile(id)
+l$name 
+
+# Get his citation history, i.e. citations to his work in a given year 
+citation_history = get_citation_history(id)
+citation_history
+
+citation_history %>%
+  write.csv(file="_data/citation_history.csv")
+
+
+```
+
+
+
+```{r export_scholar_yaml}
+l %>% yaml::write_yaml(file = "_data/scholar.yaml")
+```
+
+
+
+```{r extract_pub_table}
+# Get his publications (a large data frame)
+publication_table = get_publications(id)
+publication_table %>%
+  arrange(desc(year))
+
+#https://scholar.google.com/citations?view_op=view_citation&hl=fr&user=aYTQ-WkAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=aYTQ-WkAAAAJ:
+
+```
+
+
+```{r export_citations_year_table, error=TRUE}
+
+df=NULL
+
+
+for( i in  publication_table$pubid){
+  
+  
+  tmp=pubid_extract_citations(pubid=i)
+  Sys.sleep(sample(5:10, 1))
+  df = rbind(df,tmp)
+  
+} 
+
+
+
+if(!is.null(df)){df %>% write.csv(file="_data/publications_citations_per_years.csv")}
+
+
+
+```
+
+
+
+```{r export_pub_table}
+
+publication_table %>%
+  arrange(desc(year)) %>%
+  mutate(pubid = paste0("https://scholar.google.com/citations?view_op=view_citation&hl=fr&user=aYTQ-WkAAAAJ&citation_for_view=aYTQ-WkAAAAJ:",pubid)) %>%
+  select(year, title, author, journal, number, cites, pubid) %>%
+  write.csv(file="_data/publications_google_scholar.csv")
+
+
+
+```
+
+
+
+
+```{r eval=FALSE, include=FALSE}
+
+citation_history %>%
+  mutate(year = as.character(year)) %>%
+  ggplot() + geom_bar(aes(x=year,y=cites), stat="identity", fill="#0a0a0a") +
+  theme_classic()
+
+ggsave(filename = "images/julien_tap_citations_per_year.png")
+
+```
+
+
+
+```{r}
+l
+```
+
+
+

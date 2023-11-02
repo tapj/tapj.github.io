@@ -1,0 +1,185 @@
+---
+title: "google scholar viz"
+output: html_notebook
+---
+
+
+
+
+```{r}
+
+library(ggplot2)
+library(dplyr)
+
+
+```
+
+
+
+```{r}
+
+publications_google_scholar = readr::read_csv("_data/publications_google_scholar.csv")
+
+publications_citations_per_years = readr::read_csv("_data/publications_citations_per_years.csv")
+
+
+
+```
+
+```{r export_citations}
+
+affiliation_colors <- c(
+  "Danone_Research" = "#11ACED", 
+  "EMBL" = "#18974C", 
+  "INRAE" = "#00a3a6", 
+  "Institut_Pasteur" = "#005C97", 
+  "UPEC" = "#D32F2F"
+  
+)
+
+
+readr::read_csv2("_data/publications_affiliations.csv") %>%
+  merge(publications_citations_per_years, by="pubid") %>%
+  mutate(Year = as.character(Year)) %>%
+  group_by(Year) %>%
+  mutate(year_cite=sum(Citations)) %>%
+  ggplot() + geom_bar(aes(x=Year, y=Citations, fill=primary_affiliation), stat="identity" ) +
+  #geom_text(aes(x=Year, y=year_cite, label=year_cite), vjust=-0.5, color="black") + 
+  scale_fill_manual("Primary affiliation", values = affiliation_colors) +
+  ggtitle("Number of citations over time") +
+
+  theme_classic() +
+  theme(legend.position = c(0.02, 0.98),    # Top left position
+        legend.justification = c(0, 1),     # Anchor point (top left corner)
+        legend.background = element_rect(fill="transparent", color="transparent"), # Transparent background and border
+        legend.margin = margin(t = 0, r = 0, b = 0, l = 0))  # Reduce margin to make it closer to the corner
+
+ggsave("images/julien_tap_publications_citations_affiliations.png")
+
+```
+
+
+```{r eval=FALSE, include=FALSE}
+
+# Load required libraries
+library(tidyverse)
+
+data <- publications_citations_per_years
+
+# Define a function to compute h-index
+compute_h_index <- function(citations) {
+  sorted_citations <- sort(citations, decreasing = TRUE)
+  h_index <- 0
+  for (i in seq_along(sorted_citations)) {
+    if (sorted_citations[i] >= i) {
+      h_index <- i
+    } else {
+      break
+    }
+  }
+  return(h_index)
+}
+
+# Compute h-index over time
+years <- unique(data$Year)
+h_indices <- numeric(length(years))
+
+for (i in seq_along(years)) {
+  year <- years[i]
+  
+  # Filter data for all years up to the current year
+  subset_data <- data %>% filter(Year <= year)
+  
+  # Sum citations for each publication
+  summed_citations <- subset_data %>% group_by(pubid) %>% summarize(total_citations = sum(Citations))
+  
+  # Compute h-index for the year
+  h_indices[i] <- compute_h_index(summed_citations$total_citations)
+}
+
+# Combine results into a data frame
+result <- data.frame(Year = years, H_index = h_indices)
+
+result %>%
+  arrange(Year) %>%
+  #filter(Year != 2009) %>%
+  mutate(Year= as.character(Year)) %>%
+  ggplot() + geom_bar(aes(x=Year, y=H_index), stat="identity", fill="#0a0a0a") +
+  geom_text(aes(x=Year, y=H_index, label=H_index), vjust=1.5, color="white") + # This line adds h-index values
+  ylab("h-index") +
+  theme_classic() +
+  ggtitle("Hirsch h-index variations over time", subtitle = "*h* publications cited at least *h* times")
+
+
+
+
+```
+
+```{r eval=FALSE, include=FALSE}
+
+citation_history = readr::read_csv("_data/citation_history.csv")
+
+citation_history %>%
+mutate(year = as.character(year)) %>%
+  ggplot() + geom_bar(aes(x=year,y=cites), stat="identity", fill="#0a0a0a") +
+  geom_text(aes(x=year, y=cites, label=cites), vjust=1.5, color="white") + # This line adds h-index values
+  theme_classic()
+
+#ggsave(filename = "images/julien_tap_citations_per_year.png")
+
+
+```
+```{r export_hindex, message=FALSE, warning=FALSE}
+readr::read_csv2("_data/publications_affiliations.csv") %>%
+  merge(publications_citations_per_years, by="pubid", all = TRUE) %>%
+  select(pubid,primary_affiliation, Year, Citations) -> data
+
+# Compute cumulative citations for each publication up to each year
+cumulative_data <- data %>%
+  group_by(pubid) %>%
+  arrange(Year) %>%
+  mutate(cumulative_citations = cumsum(Citations)) %>%
+  ungroup()
+
+# Compute h-index for each year based on cumulative citations
+compute_h_index <- function(citations) {
+  sorted_citations <- sort(citations, decreasing = TRUE)
+  h_index <- sum(sorted_citations >= 1:length(sorted_citations))
+  return(h_index)
+}
+
+h_index_data <- cumulative_data %>%
+  group_by(Year) %>%
+  mutate(h_index = compute_h_index(cumulative_citations),
+         contributes_to_h_index = ifelse(cumulative_citations >= row_number(desc(cumulative_citations)) & row_number(desc(cumulative_citations)) <= h_index, 1, 0)) %>%
+  ungroup()
+
+# Aggregation by affiliation for publications that contributed to h-index
+affiliation_contrib <- h_index_data %>%
+  filter(contributes_to_h_index == 1) %>%
+  group_by(Year, primary_affiliation) %>%
+  summarise(count_contrib = n()) %>%
+  ungroup()
+
+affiliation_contrib %>%
+  arrange(Year) %>%
+  #filter(Year != 2009) %>%
+  mutate(Year= as.character(Year)) %>%
+  ggplot() + geom_bar(aes(x=Year, y=count_contrib, fill=primary_affiliation), stat="identity") +
+  #geom_text(aes(x=Year, y=max_h_index, label=H_index), vjust=1.5, color="white") + # This line adds h-index values
+  ylab("h-index") +
+  theme_classic() +
+  ggtitle("Hirsch h-index variations over time", subtitle = "*h* publications cited at least *h* times") +
+  scale_fill_manual("Primary affiliation", values = affiliation_colors) +
+  theme_classic() +
+  theme(legend.position = c(0.02, 0.98),    # Top left position
+        legend.justification = c(0, 1),     # Anchor point (top left corner)
+        legend.background = element_rect(fill="transparent", color="transparent"), # Transparent background and border
+        legend.margin = margin(t = 0, r = 0, b = 0, l = 0))  # Reduce margin to make it closer to the corner
+
+
+ggsave("images/julien_tap_h_index_affiliations.png")
+
+```
+
+
