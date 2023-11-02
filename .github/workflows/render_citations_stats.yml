@@ -29,7 +29,7 @@ jobs:
       run: sudo apt-get install libcurl4-openssl-dev
 
     - name: Install required packages
-      run: Rscript -e "install.packages(c('rmarkdown','RCurl', 'XML', 'dplyr', 'ggplot2'))"
+      run: Rscript -e "install.packages(c('rmarkdown','RCurl', 'XML', 'dplyr', 'ggplot2', 'scholar'))"
 
     - name: Set up API key
       run: echo "ZOTERO_API_KEY=${{ secrets.ZOTERO_API_KEY }}" >> .Renviron
