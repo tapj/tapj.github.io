@@ -1,0 +1,51 @@
+name: render_citations_stats
+
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 1 * *' # This cron expression will run the workflow every 1st day of the month at midnight
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up R
+      uses: r-lib/actions/setup-r@v2
+
+    - uses: r-lib/actions/setup-pandoc@v2
+
+    - name: Install curl
+      run: sudo apt-get update && sudo apt-get install -y curl
+
+    - name: Install cURL Headers
+      run: sudo apt-get install libcurl4-openssl-dev
+
+    - name: Install required packages
+      run: Rscript -e "install.packages(c('rmarkdown','RCurl', 'XML', 'dplyr', 'ggplot2', ))"
+
+    - name: Set up API key
+      run: echo "ZOTERO_API_KEY=${{ secrets.ZOTERO_API_KEY }}" >> .Renviron
+
+    - name: Render google scholar extraction
+      run: Rscript -e "rmarkdown::render('google_scholar.Rmd')"
+
+    - name: Render google scholar viz
+      run: Rscript -e "rmarkdown::render('google_scholar_viz.Rmd')"
+
+    - name: Commit results
+      run: |
+          git config --local user.name "$GITHUB_ACTOR"
+          git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
+          git commit _data/scholar.yml _data/citation_history.csv _data/publications_google_scholar.csv -m 'export scholar data' || echo "No changes to commit"
+          git commit _data/publications_citations_per_years.csv -m 'export scholar data per year' || echo "No changes to commit"
+          git commit images/julien_tap_publications_citations_affiliations.png images/julien_tap_h_index_affiliations.png  -m 'export scholar images' || echo "No changes to commit"
+          git push origin || echo "No changes to commit"
+
