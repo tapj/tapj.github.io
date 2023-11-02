@@ -44,7 +44,7 @@ jobs:
       run: |
           git config --local user.name "$GITHUB_ACTOR"
           git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
-          git commit _data/scholar.yml _data/citation_history.csv _data/publications_google_scholar.csv -m 'export scholar data' || echo "No changes to commit"
+          git commit _data/scholar.yaml _data/citation_history.csv _data/publications_google_scholar.csv -m 'export scholar data' || echo "No changes to commit"
           git commit _data/publications_citations_per_years.csv -m 'export scholar data per year' || echo "No changes to commit"
           git commit images/julien_tap_publications_citations_affiliations.png images/julien_tap_h_index_affiliations.png  -m 'export scholar images' || echo "No changes to commit"
           git push origin || echo "No changes to commit"
