@@ -4,18 +4,18 @@ markdown: kramdown
 # URL of the Site
 url: ''
 # Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
-baseurl: 
+baseurl:
 
 # Title of the Site
 title: Julien Tap
 # Description of the Site
-description: explore --method=metagenomics gut::microbiota &gt; data 
+description: explore --method=metagenomics gut::microbiota &gt; data
 # URL of Image of the Site
 site-image: /WhatATheme/assets/images/meta.jpg
 # Keywords of the Site
 site-keywords: food gut microbiome
 # URL for the Image of custom Favicon
-favicon-url: 
+favicon-url:
 
 # URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
 heroimage: http://julientap.free.fr/scotland/skye_island/skye_island/images/IMG02779.jpg
@@ -23,16 +23,16 @@ heroimage: http://julientap.free.fr/scotland/skye_island/skye_island/images/IMG0
 # Social Media and Contact
 # If you don't want to use any icon, you can leave them blank.
 email: julientap@free.fr
-facebook_username: 
+facebook_username:
 twitter_username: julientap
-instagram_username: 
+instagram_username:
 linkedin_username: julientap
 github_username:  tapj
-youtube_channel_id: 
-reddit_username: 
-behance_username: 
-dribbble_username: 
-spotify_username: 
+youtube_channel_id:
+reddit_username:
+behance_username:
+dribbble_username:
+spotify_username:
 mastodon_username: julientap@mstdn.science
 
 
@@ -40,7 +40,7 @@ mastodon_username: julientap@mstdn.science
 google-analytics: G-WPNH22RJKH
 
 # Disqus
-disqus-shortname: 
+disqus-shortname:
 
 # Name of the Author
 author-name: Julien Tap
@@ -50,6 +50,10 @@ author-image: https://media-exp1.licdn.com/dms/image/C4D03AQH5dquo8PbZHw/profile
 author-about: Julien is currently a research scientist at INRAE Micalis institute settled in Paris-Saclay campus, where he works on projects related to the interactions between food and human microbiomes in a nutrition and health perspective.
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
 author-url: https://github.com/tapj
+# URL to publication citations over time
+author-citations: /images/julien_tap_publications_citations_affiliations.png
+# URL to publication h-index over time
+author-hindex: /images/julien_tap_h_index_affiliations.png
 
 # SASS
 sass:

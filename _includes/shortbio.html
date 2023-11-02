@@ -1,3 +1,4 @@
+<!-- About Section with Author Image and Contact/Blog buttons -->
 <section class="hero is-medium has-text-centered has-background-white-ter" id="about">
     <div class="hero-body">
         <div class="container">
@@ -12,8 +13,8 @@
                     <br>
                     <div class="container columns is-centered">
                         <div>
-                            <a href="{{site.url}}{{site.baseurl}}/about"
-                                class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined">About
+                            <a href="{{site.url}}{{site.baseurl}}/#contact"
+                                class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined">Contact
                                 Me</a>
                             </a>
                         </div>
@@ -26,4 +27,43 @@
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
+<!-- Section for Citations and h-index images in cards -->
+<section class="hero is-medium has-text-centered has-background-white-ter" id ="project">
+    <div class="hero-body">
+        <div class="container" >
+            <!-- Displaying Images for Citations and h-index in cards -->
+            <div class="columns">
+                <!-- Citation Card -->
+                <div class="column">
+                    <div class="card" id ="project-card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="{{site.author-citations}}" alt="Citation Trend">
+                            </figure>
+                        </div>
+                        <div class="card-content has-text-centered">
+                            <p><strong>Total Citations:</strong> {{site.data.scholar.total_cites}}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- h-index Card -->
+                <div class="column">
+                    <div class="card" id ="project-card">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="{{site.author-hindex}}" alt="h-index Trend">
+                            </figure>
+                        </div>
+                        <div class="card-content has-text-centered">
+                            <p><strong>h-index:</strong> {{site.data.scholar.h_index}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
