@@ -28,17 +28,20 @@ jobs:
     - name: Install cURL Headers
       run: sudo apt-get install libcurl4-openssl-dev
 
+    - name: Install GLPK development files
+      run: sudo apt-get update && sudo apt-get install -y libglpk-dev
+
     - name: Set up GITHUB_PAT
       run: echo "GITHUB_PAT=${{ secrets.GIT_PAT }}" >> .Renviron
 
     - name: Install remotes packages
-      run: Rscript -e "install.packages('remotes')"
+      run: Rscript -e "install.packages('remotes','igraph','ggraph','tidygraph','graphlayouts')"
 
     - name: Install scholar packages
       run: Rscript -e "remotes::install_github('jkeirstead/scholar', force = TRUE, upgrade = 'never')"
 
     - name: Install required packages
-      run: Rscript -e "install.packages(c('rmarkdown','RCurl', 'XML', 'dplyr', 'ggplot2', 'scholar', 'readr'))"
+      run: Rscript -e "install.packages(c('rmarkdown','RCurl', 'XML', 'dplyr', 'ggplot2', 'readr'))"
 
     - name: Set up API key
       run: echo "ZOTERO_API_KEY=${{ secrets.ZOTERO_API_KEY }}" >> .Renviron
