@@ -3,9 +3,9 @@ title: "google scholar"
 output: html_notebook
 ---
 
-```{r install_scholar, eval=TRUE, include=FALSE}
+```{r install_scholar, eval=FALSE, include=FALSE}
 if(!requireNamespace('remotes')) install.packages("remotes")
-remotes::install_github('jkeirstead/scholar', upgrade = "never")
+remotes::install_github('jkeirstead/scholar', force = TRUE, upgrade = "never")
 
 
 ```
