@@ -3,7 +3,7 @@ title: "google scholar"
 output: html_notebook
 ---
 
-```{r eval=FALSE, include=FALSE}
+```{r install_scholar, eval=TRUE, include=FALSE}
 if(!requireNamespace('remotes')) install.packages("remotes")
 remotes::install_github('jkeirstead/scholar', upgrade = "never")
 
@@ -11,7 +11,7 @@ remotes::install_github('jkeirstead/scholar', upgrade = "never")
 ```
 
 
-```{r}
+```{r load_library}
 library(scholar)
 library(ggplot2)
 library(dplyr)
