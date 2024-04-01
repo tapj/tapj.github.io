@@ -1,9 +1,9 @@
 id: aYTQ-WkAAAAJ
 name: Julien Tap
 affiliation: INRAE
-total_cites: 37800.0
-h_index: 26.0
-i10_index: 33.0
+total_cites: 38181.0
+h_index: 27.0
+i10_index: 32.0
 fields:
 - Biology
 - Metagenomics
@@ -22,9 +22,9 @@ coauthors:
 - Corneliu Henegar
 - Manimozhiyan Arumugam
 - Jens Roat Kultima
-- Daniel R. Mende
 - Herve Blottiere
 - Shinichi Sunagawa
+- Daniel R. Mende
 - Alison S. Waller
 - George Weinstock
 - Makedonka Mitreva
@@ -32,5 +32,5 @@ coauthors:
 - Bernard Henrissat
 - Stanislav Dusko Ehrlich
 - Rafael Muñoz-Tamayo
-available: 20.0
-not_available: 1.0
+available: 21.0
+not_available: 0.0
