@@ -129,6 +129,7 @@ mutate(year = as.character(year)) %>%
 
 
 ```
+
 ```{r export_hindex, message=FALSE, warning=FALSE}
 readr::read_csv2("_data/publications_affiliations.csv") %>%
   merge(publications_citations_per_years, by="pubid", all = TRUE) %>%

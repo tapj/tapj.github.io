@@ -1,9 +1,9 @@
 id: aYTQ-WkAAAAJ
 name: Julien Tap
-affiliation: INRAE
-total_cites: 40256.0
-h_index: 28.0
-i10_index: 35.0
+affiliation: INRAE, Université Paris-Saclay
+total_cites: 40542.0
+h_index: 27.0
+i10_index: 34.0
 fields:
 - Biology
 - Metagenomics
@@ -30,7 +30,7 @@ coauthors:
 - Alison S. Waller
 - George Weinstock
 - Makedonka Mitreva
-- Bernard Henrissat
 - Stanislav Dusko Ehrlich
+- Patrick Veiga
 available: 22.0
 not_available: 0.0
