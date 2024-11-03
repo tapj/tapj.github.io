@@ -34,6 +34,9 @@ jobs:
     - name: Set up GITHUB_PAT
       run: echo "GITHUB_PAT=${{ secrets.GIT_PAT }}" >> .Renviron
 
+    - name: Install Rcpp
+      run: Rscript -e "install.packages('Rcpp', dependencies = TRUE)"
+
     - name: Install remotes and other packages
       run: Rscript -e "install.packages(c('remotes', 'igraph', 'ggraph', 'tidygraph', 'graphlayouts'))"
 
