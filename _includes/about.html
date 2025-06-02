@@ -10,6 +10,24 @@
                 <div class="column has-text-left-desktop has-text-left-tablet has-text-left-fullhd has-text-left-widescreen">
                     <p>{{site.author-about}}</p>
                     <br>
+
+                    <!-- Displaying Citation Count and h-index -->
+                    <p><strong>Total Citations:</strong> {{site.data.scholar.total_cites}}</p>
+                    <p><strong>h-index:</strong> {{site.data.scholar.h_index}}</p>
+                    <br>
+
+                    <!-- Displaying Images for Citations and h-index -->
+                    <figure class="image">
+                        <figcaption>Citation Trend:</figcaption>
+                        <img src="{{site.author-citations}}" alt="Citation Trend">
+                    </figure>
+                    <br>
+                    <figure class="image">
+                        <figcaption>h-index Trend:</figcaption>
+                        <img src="{{site.author-hindex}}" alt="h-index Trend">
+                    </figure>
+                    <br>
+
                     <div class="container columns is-centered">
                         <div>
                             <a href="{{site.url}}{{site.baseurl}}/#contact"
