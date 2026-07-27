@@ -1,0 +1,52 @@
+---
+title: "Research"
+---
+
+::: {.page-intro}
+<p class="eyebrow">Research programme</p>
+
+# Microbial ecology across scales.
+
+My work connects descriptive metagenomics with mechanistic ecology and ecosystem engineering. The aim is not merely to identify microbial signatures, but to understand states, predict trajectories and design interventions.
+:::
+
+::: {.bento}
+::: {.tile .wide}
+<span class="num">01</span>
+
+### Microbiome states and global branches
+
+How can high-dimensional microbiome variation be represented as interpretable ecological states? Population metagenomics reveals recurrent configurations while longitudinal observations expose the transitions between them.
+:::
+
+::: {.tile .dark}
+<span class="num">02</span>
+
+### Stability and interaction mechanisms
+
+Which resource constraints, interactions and historical contingencies determine whether a community resists, shifts or collapses?
+:::
+
+::: {.tile}
+<span class="num">03</span>
+
+### Food–gut ecosystem coalescence
+
+Fermented foods are living microbial ecosystems. I investigate what happens when their communities and functions meet those of the human gut.
+:::
+
+::: {.tile .wide .acid}
+<span class="num">04</span>
+
+### Designed ecosystems
+
+Ecological chassis, synthetic consortia and digital twins provide complementary ways to test causal hypotheses and steer microbial fluxes.
+:::
+:::
+
+::: {.section}
+## Scientific trajectory
+
+Pasteur Institute and nutritional gut ecology shaped my experimental foundations; EMBL and MetaGenoPolis expanded them to population metagenomics; Danone added translational research; INRAE Micalis now provides the setting to connect food microbial ecology with ecosystem engineering.
+:::
+

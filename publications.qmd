@@ -1,0 +1,44 @@
+---
+title: "Publications"
+---
+
+::: {.page-intro}
+<p class="eyebrow">Selected evidence</p>
+
+# Publications as landmarks.
+
+Selected outputs are organized around the questions they helped open: stratification, stability, community coalescence and ecosystem design.
+:::
+
+::: {.bento}
+::: {.tile .wide}
+### Global microbiome branches
+
+Population-scale analyses that reframed variation as recurrent ecological configurations rather than isolated taxonomic signatures.
+
+![](images/microbiome_enterobranches_train_stations.jpg){alt="Conceptual representation of global microbiome branches"}
+:::
+::: {.tile .dark}
+### Ecological chassis
+
+Mechanistic work using *Bifidobacterium adolescentis* to connect community context, growth conditions and functional outcomes.
+:::
+::: {.tile}
+### Food–gut coalescence
+
+Experimental and computational studies of microbial transfer, persistence and functional exchange.
+:::
+::: {.tile .acid}
+### Research profile
+
+For the complete and current list, consult [Google Scholar](https://scholar.google.com/citations?user=HKmBcCkAAAAJ) and [ORCID](https://orcid.org/0000-0002-3398-7531).
+:::
+:::
+
+::: {.section}
+::: {.figure}
+![](images/julien_tap_publications_citations_affiliations.png){alt="Publication and citation overview"}
+<figcaption>Bibliometric overview exported from the previous portfolio.</figcaption>
+:::
+:::
+

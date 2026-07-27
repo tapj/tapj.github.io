@@ -1,0 +1,32 @@
+---
+title: "About"
+---
+
+::: {.page-intro}
+<p class="eyebrow">About</p>
+
+# Julien Tap
+
+I am a microbial ecologist and metagenomics researcher at INRAE Micalis. My work sits at the intersection of human gut microbiome science, food microbial ecology and ecosystem engineering.
+:::
+
+::: {.bento}
+::: {.tile .wide .dark}
+### A translational ecology
+
+My approach combines population cohorts, controlled ecosystems, multi-omics and modelling. I use each scale to challenge the others: observations generate hypotheses; experimental communities expose mechanisms; models reveal which interventions are plausible.
+:::
+::: {.tile .coral}
+### Current focus
+
+Microbiome trajectories, fermented-food communities, synthetic consortia and microbial digital twins.
+:::
+::: {.tile}
+### Connect
+
+[GitHub](https://github.com/tapj) · [Google Scholar](https://scholar.google.com/citations?user=HKmBcCkAAAAJ) · [ORCID](https://orcid.org/0000-0002-3398-7531)
+
+INRAE · Micalis Institute
+:::
+:::
+

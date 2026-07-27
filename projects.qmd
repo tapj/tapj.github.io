@@ -1,0 +1,49 @@
+---
+title: "Projects"
+---
+
+::: {.page-intro}
+<p class="eyebrow">Current portfolio</p>
+
+# Experiments for living systems.
+
+Each project addresses a different layer of the same question: how can we observe, model and ultimately design microbial ecosystem trajectories?
+:::
+
+::: {.bento}
+::: {.tile .wide .dark}
+### SynthPlex
+
+Synthetic microbial communities as controllable experimental systems for testing ecological assembly and function.
+
+<span class="tag">Synthetic ecology</span> <span class="tag">Community design</span>
+:::
+::: {.tile .coral}
+### MicroEngine
+
+Engineering principles for microbial ecosystems: from interaction maps to robust functional consortia.
+:::
+::: {.tile}
+### FermenTwin
+
+Digital twins of fermented ecosystems linking measurements, models and intervention scenarios.
+:::
+::: {.tile .wide}
+### DOMINO
+
+Understanding microbial and molecular interactions across diet, fermented foods and the intestinal ecosystem.
+
+![](images/fermented_AI.png){alt="Artificial intelligence interpretation of fermented microbial ecosystems"}
+:::
+::: {.tile .acid}
+### Le French Gut
+
+Population-scale mapping of the French gut microbiome and its diversity.
+:::
+::: {.tile}
+### LivinGut
+
+Living models for studying microbial dynamics and their response to controlled perturbations.
+:::
+:::
+

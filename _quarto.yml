@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - research.qmd
+    - projects.qmd
+    - publications.qmd
+    - about.qmd
+
+website:
+  title: "Julien Tap"
+  favicon: images/favicon.ico
+  navbar:
+    left:
+      - href: research.qmd
+        text: Research
+      - href: projects.qmd
+        text: Projects
+      - href: publications.qmd
+        text: Publications
+      - href: about.qmd
+        text: About
+    right:
+      - icon: github
+        href: https://github.com/tapj
+  page-footer:
+    left: "Julien Tap · Microbial ecology & metagenomics"
+    right: "Built with Quarto"
+
+format:
+  html:
+    theme: none
+    css: styles.css
+    include-after-body: interactions.html
+    toc: false
+    smooth-scroll: true
+    link-external-newwindow: true
+

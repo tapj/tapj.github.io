@@ -1,0 +1,98 @@
+---
+title: "Julien Tap"
+page-layout: full
+body-classes: hero-shell
+---
+
+::: {.hero-grid}
+::: {.hero-copy}
+<p class="eyebrow">Microbial ecology · Metagenomics · Ecosystem design</p>
+
+# From microbiome states to designed ecosystems.
+
+<p class="lead">I study how microbial communities organize, persist and exchange members — then turn that ecological knowledge into ways of steering food and gut ecosystems.</p>
+
+<div class="route"><span>Observe</span><i>→</i><span>Understand</span><i>→</i><span>Design</span><i>→</i><span>Control</span></div>
+:::
+
+::: {.atlas aria-label="Abstract microbial ecosystem map"}
+<span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
+:::
+:::
+
+::: {.section}
+::: {.section-head}
+## A research atlas
+
+The work moves across scales: from population-level microbiome stratification to interaction mechanisms, community coalescence and engineered microbial fluxes.
+:::
+
+::: {.bento}
+::: {.tile .wide .dark .reveal}
+<span class="kicker">01 · States & trajectories</span>
+
+### Mapping global branches
+
+Moving beyond static signatures to identify reproducible ecosystem states and the trajectories that connect them.
+
+![](images/microbiome_enterobranches_train_stations.jpg){alt="Microbiome branches represented as train stations"}
+:::
+
+::: {.tile .coral .reveal}
+<span class="kicker">02 · Mechanisms</span>
+
+### What makes a community stable?
+
+Ecological interactions, environmental constraints and the rules governing food–gut ecosystem coalescence.
+:::
+
+::: {.tile .acid .reveal}
+<span class="kicker">03 · Design</span>
+
+### Ecological chassis
+
+From designed consortia to digital twins: building microbial systems whose behavior can be anticipated and steered.
+:::
+
+::: {.tile .wide .reveal}
+<span class="kicker">Thesis</span>
+
+### From signatures to states, from states to trajectories, and from trajectories to engineered microbial fluxes.
+
+[Explore the research →](research.qmd){.cta}
+:::
+:::
+:::
+
+::: {.section}
+::: {.section-head}
+## The research programme
+
+A connected programme rather than a collection of isolated projects.
+:::
+
+::: {.story}
+::: {.story-row .reveal}
+<strong>01</strong>
+
+### Observe
+
+Stratify microbiomes across populations and environments; describe states without reducing ecosystems to lists of taxa.
+:::
+::: {.story-row .reveal}
+<strong>02</strong>
+
+### Understand
+
+Resolve the ecological mechanisms behind stability, transitions and microbial exchanges between fermented foods and the gut.
+:::
+::: {.story-row .reveal}
+<strong>03</strong>
+
+### Design
+
+Combine ecological chassis, synthetic communities and digital twins to make microbial fluxes experimentally tractable.
+:::
+:::
+:::
+

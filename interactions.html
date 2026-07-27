@@ -1,0 +1,10 @@
+<script>
+const root=document.documentElement;
+document.querySelectorAll('[data-theme]').forEach(b=>b.addEventListener('click',()=>{
+  root.classList.toggle('night'); localStorage.setItem('night',root.classList.contains('night'));
+}));
+if(localStorage.getItem('night')==='true') root.classList.add('night');
+const observer=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('seen')),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+
