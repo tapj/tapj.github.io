@@ -1,62 +1,63 @@
 name: render_citations_stats
 
-
 on:
   push:
-    branches:
-      - main
+    branches: [master]
+    paths:
+      - .github/workflows/render_citations_stats.yml
+      - google_scholar.Rmd
+      - google_scholar_viz.Rmd
+      - _data/publications_affiliations.csv
   workflow_dispatch:
   schedule:
-    - cron: '0 0 1 * *' # This cron expression will run the workflow every 1st day of the month at midnight
+    - cron: '17 2 1 * *'
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: render-citations-stats
 
 jobs:
   build:
+    if: github.ref_name == github.event.repository.default_branch
     runs-on: ubuntu-latest
-
+    timeout-minutes: 40
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - uses: actions/checkout@v6
 
-    - name: Set up R
-      uses: r-lib/actions/setup-r@v2
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true
 
-    - uses: r-lib/actions/setup-pandoc@v2
+      - uses: r-lib/actions/setup-pandoc@v2
 
-    - name: Install required system dependencies
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y curl libcurl4-openssl-dev libglpk-dev libfontconfig1-dev libfreetype6-dev
+      - name: Install R dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev libfontconfig1-dev libfreetype6-dev libharfbuzz-dev libfribidi-dev libpng-dev libtiff-dev libjpeg-dev
+          Rscript -e 'packages <- c("scholar", "rmarkdown", "yaml", "rvest", "dplyr", "ggplot2", "readr"); install.packages(packages); stopifnot(all(vapply(packages, requireNamespace, logical(1), quietly = TRUE)))'
 
-    - name: Set up GITHUB_PAT
-      run: echo "GITHUB_PAT=${{ secrets.GIT_PAT }}" >> .Renviron
+      - name: Export Google Scholar data
+        run: Rscript -e 'rmarkdown::render("google_scholar.Rmd", output_dir = tempdir())'
 
-    - name: Install Rcpp
-      run: Rscript -e "install.packages('Rcpp', dependencies = TRUE)"
+      - name: Render citation charts
+        run: Rscript -e 'rmarkdown::render("google_scholar_viz.Rmd", output_dir = tempdir())'
 
-    - name: Install remotes and other packages
-      run: Rscript -e "install.packages(c('remotes', 'igraph', 'ggraph', 'tidygraph', 'graphlayouts'))"
+      - name: Commit and push citation data
+        run: |
+          git add _data/scholar.yaml _data/citation_history.csv _data/publications_google_scholar.csv \
+            _data/publications_citations_per_years.csv images/julien_tap_publications_citations_affiliations.png \
+            images/julien_tap_h_index_affiliations.png
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Refresh Google Scholar citation data'
+            git push origin "HEAD:${GITHUB_REF}"
+          fi
 
-    - name: Install scholar packages
-      run: Rscript -e "remotes::install_github('jkeirstead/scholar', force = TRUE, upgrade = 'never')"
-
-    - name: Install required R packages
-      run: Rscript -e "install.packages(c('rmarkdown','RCurl', 'XML', 'dplyr', 'ggplot2', 'readr'))"
-
-    - name: Set up API key
-      run: echo "ZOTERO_API_KEY=${{ secrets.ZOTERO_API_KEY }}" >> .Renviron
-
-    - name: Render google scholar extraction
-      run: Rscript -e "rmarkdown::render('google_scholar.Rmd')"
-
-    - name: Render google scholar viz
-      run: Rscript -e "rmarkdown::render('google_scholar_viz.Rmd')"
-
-    - name: Commit results
-      run: |
-          git config --local user.name "$GITHUB_ACTOR"
-          git config --local user.email "$GITHUB_ACTOR@users.noreply.github.com"
-          git commit _data/scholar.yaml _data/citation_history.csv _data/publications_google_scholar.csv -m 'export scholar data' || echo "No changes to commit"
-          git commit _data/publications_citations_per_years.csv -m 'export scholar data per year' || echo "No changes to commit"
-          git commit images/julien_tap_publications_citations_affiliations.png images/julien_tap_h_index_affiliations.png  -m 'export scholar images' || echo "No changes to commit"
-          git push origin || echo "No changes to commit"
-
+      - name: Request a GitHub Pages rebuild
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"

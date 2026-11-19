@@ -3,14 +3,6 @@ title: "google scholar"
 output: html_notebook
 ---
 
-```{r install_scholar, eval=FALSE, include=FALSE}
-if(!requireNamespace('remotes')) install.packages("remotes")
-remotes::install_github('jkeirstead/scholar', force = TRUE, upgrade = "never")
-
-
-```
-
-
 ```{r load_library}
 library(scholar)
 library(ggplot2)
@@ -24,30 +16,7 @@ library(dplyr)
 
 ```{r extract_citations_function}
 
-pubid = "u5HHmVD_uO8C"
-
-# pubid_extract_citations = function (pubid="u5HHmVD_uO8C"){
-# 
-# html_data = rvest::read_html(paste0("https://scholar.google.com/citations?view_op=view_citation&hl=fr&user=aYTQ-WkAAAAJ&citation_for_view=aYTQ-WkAAAAJ:",pubid))
-# 
-# # Extract years and citations
-# years <- html_data  %>% 
-#   rvest::html_nodes('.gsc_oci_g_t') %>% 
-#   rvest::html_text()
-# 
-# if(length(years) == 0){df=NULL; return(df)}
-# 
-# citations <- html_data  %>% 
-#   rvest::html_nodes('.gsc_oci_g_al') %>% 
-#   rvest::html_text()
-# 
-# # Create a dataframe
-# df <- data.frame(Year = years, Citations = citations, pubid= pubid)
-# return(df)}
-
-
-
-pubid_extract_citations = function (pubid="u5HHmVD_uO8C"){
+pubid_extract_citations = function (pubid) {
 
 html_data = rvest::read_html(paste0("https://scholar.google.com/citations?view_op=view_citation&hl=fr&user=aYTQ-WkAAAAJ&citation_for_view=aYTQ-WkAAAAJ:",pubid))
 
@@ -58,7 +27,13 @@ years <- html_data %>%
   rvest::html_nodes('.gsc_oci_g_t') %>% 
   rvest::html_text()
 
-if(length(years) == 0){df=NULL; return(df)}
+if (length(years) == 0) {
+  article_title <- rvest::html_elements(html_data, "#gsc_oci_title")
+  if (length(article_title) == 0) {
+    stop("Unexpected Google Scholar article page for ", pubid)
+  }
+  return(NULL)
+}
 
 # Initialize an empty citations vector
 citations <- numeric(length(years))
@@ -87,88 +62,56 @@ return(df)}
 
 
 
-#pubid_extract_citations(pubid="QVtou7C4vgoC")
-
-#pubid_extract_citations(pubid="u5HHmVD_uO8C")
-
 ```
 
 
-```{r get_scholar_profile}
-# Define the id 
-id <- 'aYTQ-WkAAAAJ'
-
-# Get his profile and print his name
+```{r export_profile_and_publications}
+id <- "aYTQ-WkAAAAJ"
 l <- get_profile(id)
-l$name 
+citation_history <- get_citation_history(id)
+publication_table <- get_publications(id)
 
-# Get his citation history, i.e. citations to his work in a given year 
-citation_history = get_citation_history(id)
-citation_history
+previous_publications <- read.csv("_data/publications_google_scholar.csv")
+previous_ids <- sub(".*citation_for_view=[^:]+:", "", previous_publications$pubid)
+matched_ids <- sum(previous_ids %in% publication_table$pubid)
+if (!identical(as.character(l$name), "Julien Tap") ||
+    length(l$total_cites) != 1 || !is.finite(l$total_cites) || l$total_cites <= 0 ||
+    length(l$h_index) != 1 || !is.finite(l$h_index) || l$h_index <= 0 ||
+    nrow(citation_history) == 0 ||
+    matched_ids < 0.8 * length(previous_ids)) {
+  stop("Google Scholar returned an incomplete profile, citation history or publication list.")
+}
 
-citation_history %>%
-  write.csv(file="_data/citation_history.csv")
-
-
-```
-
-
-
-```{r export_scholar_yaml}
-l %>% yaml::write_yaml(file = "_data/scholar.yaml")
-```
-
-
-
-```{r extract_pub_table}
-# Get his publications (a large data frame)
-publication_table = get_publications(id)
-publication_table %>%
-  arrange(desc(year))
-
-#https://scholar.google.com/citations?view_op=view_citation&hl=fr&user=aYTQ-WkAAAAJ&pagesize=80&sortby=pubdate&citation_for_view=aYTQ-WkAAAAJ:
-
-```
-
-
-```{r export_citations_year_table, error=TRUE}
-
-df=NULL
-
-
-for( i in  publication_table$pubid){
-  
-  
-  tmp=pubid_extract_citations(pubid=i)
-  Sys.sleep(sample(5:10, 1))
-  df = rbind(df,tmp)
-  
-} 
-
-
-
-if(!is.null(df)){df %>% write.csv(file="_data/publications_citations_per_years.csv")}
-
-
-
-```
-
-
-
-```{r export_pub_table}
-
+write.csv(citation_history, file = "_data/citation_history.csv")
+yaml::write_yaml(l, file = "_data/scholar.yaml")
 publication_table %>%
   arrange(desc(year)) %>%
-  mutate(pubid = paste0("https://scholar.google.com/citations?view_op=view_citation&hl=fr&user=aYTQ-WkAAAAJ&citation_for_view=aYTQ-WkAAAAJ:",pubid)) %>%
+  mutate(pubid = paste0(
+    "https://scholar.google.com/citations?view_op=view_citation&hl=fr&user=",
+    id, "&citation_for_view=", id, ":", pubid
+  )) %>%
   select(year, title, author, journal, number, cites, pubid) %>%
-  write.csv(file="_data/publications_google_scholar.csv")
-
-
-
+  write.csv(file = "_data/publications_google_scholar.csv")
 ```
 
-
-
+```{r export_citations_year_table}
+# Only replace the historical series after a complete pass. A temporary
+# Scholar error on article details does not prevent updating the profile.
+tryCatch({
+  cited_ids <- publication_table$pubid[!is.na(publication_table$cites) & publication_table$cites > 0]
+  yearly <- lapply(unique(cited_ids), function(pubid) {
+    Sys.sleep(5)
+    pubid_extract_citations(pubid)
+  })
+  yearly <- bind_rows(yearly)
+  if (nrow(yearly) == 0) {
+    stop("No per-publication citation history received.")
+  }
+  write.csv(yearly, file = "_data/publications_citations_per_years.csv")
+}, error = function(error) {
+  message("::warning::Kept existing per-publication citation history: ", conditionMessage(error))
+})
+```
 
 ```{r eval=FALSE, include=FALSE}
 
